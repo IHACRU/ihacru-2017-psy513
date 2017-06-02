@@ -1,9 +1,18 @@
-# ihacru-2017-psy513
-Graduate course at the University of Victoria. Statistical Analysis of Administrative Health and Linked Longitudinal Encounter Data.
+# Statistical Analysis of Administrative Health and Linked Longitudinal Encounter Data.
+A graduate course (**PSYC 513 - Statistical Methods**) taught at the University of Victoria in summer 2017.
 
 # Course description
 
 This course will focus on types and sources of administrative health data and on the permissions, acquisition, management, and statistical analysis of administrative health and linked longitudinal encounter data. Analyses will cover a range of methods, including descriptive statistics, longitudinal trajectories, visualization of encounter timelines, multilevel modeling of within-person change, growth mixture models, and predictive models to quantify risk of future health events. This course will lead to an ongoing collaborative interdisciplinary research group, including data, policy, and statistical analysis experts. Simulated data from Island Health will be used for purposes of this course (signed non-disclosure agreement required for access to information and analysis tools).
+
+
+# Schedule
+![image](https://cloud.githubusercontent.com/assets/2608073/26729360/6a4bf0ee-477b-11e7-8673-d5c9c5366623.png)
+
+# Instructors
+Scott Hofer
+Ken Moselle
+Andrey Koval
 
 # Reading 
 •	[Secondary Analysis of Electronic Health Records](http://www.springer.com/gp/book/9783319437408) (open access)
@@ -11,4 +20,16 @@ This course will focus on types and sources of administrative health data and on
 # Prerequisites 
 
 Basic familiarity with R is recommended. While we do not exclude other statistical packages, the primary data handling, modeling, and graphing will be written out in R scripts. Student engagement with the data and models will take place via RStudio. Students will be expected to learn how to read, modify, and apply existing R scripts to perform data manipulation, model estimation, and publish results as dynamic documents. 
+
+# Grading
+
+### Class Participation (20%):  	
+Students are encouraged to take an active part in the direction and content of the course by preparing for and contributing to class discussions of assigned readings, sharing with others their (direct or indirect) research experience, challenges and successes. The level and relevance of contribution to the course will be a prominent factor in final grading. 
+
+### Research Project (80%): 	 
+- 1.	Analysis of Encounter Data and Summary of Results (30%): Statistical analysis will focus on simulated longitudinal encounter data from Island Health.	 Data and initial scripts for statistical analysis and plotting will be provided. Learners will be required to submit two reports which they will produce using software and scripts demonstrated in class. Course materials related to these reports are located at https://github.com/IHACRU/ihacru-2017-psy513.     
+- 2.	Research Proposal (30%): A proposal (7-10 pages) will be developed that will be sufficient for a data request and ethics application. Details will be given in class.
+- 3.	A 10 minute presentation (20%): Students are asked to present their research proposal to the class at the end of the term. 
+
+
 
