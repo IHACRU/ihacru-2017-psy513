@@ -10,9 +10,7 @@ This course will focus on types and sources of administrative health data and on
 ![image](https://cloud.githubusercontent.com/assets/2608073/26729360/6a4bf0ee-477b-11e7-8673-d5c9c5366623.png)
 
 # Instructors
-Scott Hofer
-Ken Moselle
-Andrey Koval
+Scott Hofer, Kenneth Moselle, Andrey Koval
 
 # Reading 
 •	[Secondary Analysis of Electronic Health Records](http://www.springer.com/gp/book/9783319437408) (open access)
