@@ -24,27 +24,19 @@ requireNamespace("DT", quietly=TRUE) # for dynamic tables
 # requireNamespace("mgcv, quietly=TRUE) #For the Generalized Additive Model that smooths the longitudinal graphs.
 
 # ---- declare-globals ---------------------------------------------------------
-
-path_input_mapping          <- "./data-unshared/derived/dto_location_map.rds" # see ellis
-# path_input_events          <- "./data-unshared/raw/Addiction_Patient_Profiles_2017-04-10.csv"
-# path_input_events          <- "./data-unshared/raw/Addiction_Patient_Profiles_2017-04-18.csv"
-path_input_events          <- "./data-unshared/raw/Addiction_Patient_Profiles_2017-04-19.csv"
-# path_input_events          <- "./data-unshared/raw/MHSU_Data_Export_2017-04-18.csv"
-
-# path_save <- "./data-unshared/derived/dto_patient_profiles_addiction"
-# path_save <- "./data-unshared/derived/dto_patient_events_mhsu_74"
-path_save <- "./data-unshared/derived/dto_patient_events_addictions_4067"
+# path_input_mapping  <- "./data-unshared/derived/dto_location_map.rds" # `./0-ellis-location-map.R`
+path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
+path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
 
 
 
-testit::assert("File does not exist", base::file.exists(path_input_mapping))
+# testit::assert("File does not exist", base::file.exists(path_input_mapping))
 testit::assert("File does not exist", base::file.exists(path_input_events))
 # testit::assert("File does not exist", base::file.exists(path_input_service_types))
 
 # ---- utility-functions ----------------------------------------------------- 
 
 
-# ds_location_map %>% count_unique_program_ids()
 # ---- load-data ---------------------------------------------------------------
 # ds_location_map     <- readRDS(path_input_mapping) %>% as.data.frame()
 ds_patient_events <- readr::read_csv(path_input_events) # %>% as.data.frame()
@@ -68,7 +60,6 @@ ds_patient_events %>% dplyr::glimpse()
 ds_patient_events <- ds_patient_events %>% 
   dplyr::rename(
     id = cohort_patient_id # id for person in this cohort study
-    # id = patient_dim_key,
     # age = age_group
   ) %>% 
   dplyr::mutate(
@@ -110,7 +101,7 @@ ds_patient_events <- ds_patient_events %>%
     ,location_mapping_id      # unique id for VIHA program, connects to location map
     ,palette_code             # unique id for colours of this palette
     ,palette_colour_name      # labels for clusters of service programs (aka 3T palette colours)
-    # in case we missed something
+    # in case we missed to mention some variable by name
     ,dplyr::everything()#esle  
   ) %>% 
   dplyr::arrange(
@@ -131,9 +122,60 @@ ds_patient_events <- ds_patient_events %>%
 # d %>% DT::datatable()
 
 # ---- save-to-disk ----------------
-
-
 saveRDS(ds_patient_events, paste0(path_save,".rds"))
 # readr::write_csv(ds_location_map, paste0(path_save,".csv"))
+
+
+# ---- inspect-data ----------------
+# PET - Patient Event Table
+ds %>% dplyr::glimpse()
+# How many patients are in this cohort?
+ds %>% distinct(id) %>% count() %>% neat()
+# What are basic demographics?
+ds %>% unique_sums(c("gender")) %>% arrange(desc(n_people)) %>% neat()
+ds %>% unique_sums(c("age_group"))  %>%  neat()
+ds %>% unique_sums(c("gender","age_group")) %>%  neat()
+
+# how may unique encounters are there in this set?
+ds %>% distinct(encounter_fact_key) %>% count() %>% neat()
+# tally engagement across encounter classes (as defined by data warehouse)
+ds %>% unique_sums("encounter_class")%>% arrange(desc(n_people)) %>% neat()
+ds %>% unique_sums("encounter_type") %>% arrange(desc(n_people)) %>% neat()
+ds %>% unique_sums(c("encounter_class","encounter_type"))%>% arrange(desc(encounter_class,n_people)) %>% neat()
+
+# how many event types  were there?
+ds %>% unique_sums("event_type") %>% arrange(desc(n_people)) %>% neat()
+# view event_title and event_details with a dynmaic table 
+ds %>% unique_sums(c("event_type","event_title","event_detail"))%>% arrange(desc(n_people)) %>% neat_DT()
+# what is the total number of events recorded for this cohort?
+ds %>% summarize(n_event = sum(event_count)) %>% neat()
+
+# what was the pattern of engagement over time?
+ds %>% unique_sums(c("event_year")) %>% neat()
+ds %>% unique_sums(c("event_month")) %>% neat()
+
+# durations of events vary, what is this distribution?
+d <- ds %>% unique_sums("duration_days")
+d %>% slice(1:6) %>% neat() # there are 318 possible values, the first 10 shown here
+d %>% tail(5) %>% neat() # the last value exposes a clear data error
+d <- d %>% 
+  filter(!duration_days==4910527) # remove the impossible value
+# durations of events vary, what is this distribution?
+d %>% 
+  ggplot( aes(x = duration_days, y = n_people) )+
+  geom_point()+
+  theme_minimal()
+# durations of events vary, what is this distribution?
+d %>% 
+  ggplot( aes(x = duration_days, y = n_encounters) )+
+  geom_point()+
+  theme_minimal()  
+# durations of events vary, what is this distribution?
+d %>% 
+  ggplot( aes(x = duration_days, y = n_events) )+
+  geom_point()+
+  theme_minimal()  
+
+
 
  
