@@ -24,6 +24,8 @@ stringi,TRUE,TRUE,,Consistent/convenient function signatures for manipulating te
 stringr,TRUE,TRUE,,Consistent/convenient function signatures for manipulating text.
 testit,TRUE,TRUE,,Has the useful `assert()` function.
 testthat,TRUE,TRUE,hadley,Heavier testing framework that's good for package development.
-tidyr,TRUE,TRUE,hadley,"An evolution of reshape2. Works with dplyr."
+tidyr,TRUE,TRUE,hadley,An evolution of reshape2. Works with dplyr.
 xtable,TRUE,FALSE,,"Formats tables, especially for LaTeX output."
 yaml,TRUE,TRUE,,Needed for knitr and reports.
+kableExtra,TRUE,TRUE,,
+tidyverse,TRUE,TRUE,,Rstudio Universe
