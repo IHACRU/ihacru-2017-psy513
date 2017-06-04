@@ -1,0 +1,24 @@
+variable,index,location,unit_count,condition_present
+Population,Population,Population,person,#N/A
+Incident Cases,Incidence,Population,person,TRUE
+Prevalent Cases,Prevalence,Population,person,TRUE
+All-Cause Mortality among people with a diagnosis of the disease case definition,Mortality,Morgue,person,TRUE
+All-Cause Mortality among people without a diagnosis case definition of the disease,Mortality,Morge,person,FALSE
+Hospitalizations with the disease case definition person count,Hospitalization,Hospital,person,TRUE
+Hospitalizations with the disease case definition (Separations),Hospitalization,Hospital,separation,TRUE
+Hospitalizations with the disease case definition (Days Stayed),Hospitalization,Hospital,days_stayed,TRUE
+Hospitalizations without the disease case definition person count,Hospitalization,Hospital,person,FALSE
+Hospitalizations without the disease (Separations),Hospitalization,Hospital,separation,FALSE
+Hospitalizations without the disease case definition  (Days Stayed),Hospitalization,Hospital,days_stayed,FALSE
+Physician Visits with the disease case definition person count,Physician,Doctor,person,TRUE
+Physician Visits with the disease case definition  (Visit Count),Physician,Doctor,visit,TRUE
+Physician Visits without the disease  case definition person count,Physician,Doctor,person,FALSE
+Physician Visits without the disease case definition (Visit Count),Physician,Doctor,visit,FALSE
+General Physician Visits with the disease case definition person count,General,Doctor,person,TRUE
+General Physician Visits with the disease case definition (Visit Count),General,Doctor,visit,TRUE
+General Physician Visits without the disease case definition person count,General,Doctor,person,FALSE
+General Physician Visits without the disease case definition (Visit Count),General,Doctor,visit,FALSE
+Specialist Physician Visits with the disease case definition person count,Specialist,Doctor,person,TRUE
+Specialist Physician Visits with the disease case definition (Visit Count),Specialist,Doctor,visit,TRUE
+Specialist Physician Visits without the disease case definition person count,Specialist,Doctor,person,FALSE
+Specialist Physician Visits without the disease case definition (Visit Count),Specialist,Doctor,visit,FALSE
