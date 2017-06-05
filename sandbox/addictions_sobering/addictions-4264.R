@@ -243,7 +243,7 @@ d <- ds %>% unique_sums(c(
   dplyr::select(n_people, n_encounters, n_events, dplyr::everything()) 
 d %>% DT::datatable(filter="top",options = list(pageLength = 6))
 # save this file to examine separately
-readr::write_csv(d,"./data-public/derived/addictions-4067-summative-2017-05-09.csv")
+# readr::write_csv(d,"./data-public/derived/addictions-4264-summative-2017-06-05.csv")
 # ---- dev-b-4 ---------------------------------------------------
 ds %>% unique_sums("provider_mix") %>% arrange(desc(n_people)) %>% neat()
 ds %>% unique_sums("intensity_type") %>% arrange(desc(n_people)) %>%  neat()    
