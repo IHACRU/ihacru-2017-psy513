@@ -17,7 +17,7 @@ This course will focus on types and sources of administrative health data and on
 # Materials
 - [Lecture slides](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/lecture-slides-ihacru-2017-psyc513.pdf)
 - Book: [Secondary Analysis of Electronic Health Records](http://www.springer.com/gp/book/9783319437408) (open access)
-
+- This repository: https://github.com/IHACRU/ihacru-2017-psy513    
 
 # Prerequisites 
 
