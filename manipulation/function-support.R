@@ -194,7 +194,7 @@ unique_sums <- function(
     dplyr::group_by_(.dots = group_by_vars) %>% 
     dplyr::summarize(
       n_people     = length(unique(id)),
-      n_encounters = length(unique(encounter_fact_key)),
+      n_encounters = length(unique(encounter_id)),
       n_events     = sum(event_count) 
     )
   return(d_out)

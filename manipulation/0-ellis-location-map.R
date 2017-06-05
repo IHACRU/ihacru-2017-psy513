@@ -59,11 +59,14 @@ replace_with_na <- function(x){
 # ds %>% count_unique_program_ids()
 # ---- load-data ---------------------------------------------------------------
 ds <- readr::read_csv(path_input) %>% as.data.frame() 
-
+ds <- read.csv(path_input,
+               stringsAsFactors=FALSE)
 # ---- tweak-data -------------------------------------------------------------
+# reproduction in SRE causes the name of the first variable to have a prefex <U+FEFF>
+names(ds)[1] <- "location_map_id" # correct for UTF-8-BOM
 # standardize names : remove capital letters
 colnames(ds) <- tolower(colnames(ds))
-ds %>% glimpse()
+ds %>% glimpse()  
 # Some variables have different character codes for missing values
 # Translate various character values into NA values using 
 # the function replace_with_na() defined above

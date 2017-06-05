@@ -16,7 +16,7 @@ library(ggplot2)
 library(dichromat)
 library(RColorBrewer)
 # devtools::install_github(repo="Melinae/TabularManifest")
-library(TabularManifest) # custom histographs for quick EDA
+# library(TabularManifest) # custom histographs for quick EDA
 
 #########################################################
 ### Define theme elements for ggplot2 graphs

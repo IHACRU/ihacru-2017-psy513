@@ -26,6 +26,7 @@ requireNamespace("DT", quietly=TRUE) # for dynamic tables
 # ---- declare-globals ---------------------------------------------------------
 # path_input_mapping  <- "./data-unshared/derived/dto_location_map.rds" # `./0-ellis-location-map.R`
 path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
+# path_input_events   <- "./data-unshared/raw/temp_out.csv"
 path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
 
 
@@ -39,9 +40,12 @@ testit::assert("File does not exist", base::file.exists(path_input_events))
 
 # ---- load-data ---------------------------------------------------------------
 # ds_location_map     <- readRDS(path_input_mapping) %>% as.data.frame()
-ds_patient_events <- readr::read_csv(path_input_events) # %>% as.data.frame()
-# ds_patient_events %>% dplyr::glimpse()
+ds_patient_events <- readr::read_csv(path_input_events)#  %>% as.data.frame()
 
+# reproduction in SRE causes the name of the first variable to have a prefex <U+FEFF>
+names(ds_patient_events)[1] <- "cohort_patient_id" # correct for UTF-8-BOM
+ds_patient_events %>% dplyr::glimpse()
+# 
 # ---- tweak-data -------------------------------------------------------------
 # standardize names : remove capital letters
 colnames(ds_patient_events) <- tolower(colnames(ds_patient_events))
@@ -56,7 +60,7 @@ ds_patient_events <- ds_patient_events %>%
 
 
 ds_patient_events %>% dplyr::glimpse()
-
+# d %>% dplyr::glimpse()
 ds_patient_events <- ds_patient_events %>% 
   dplyr::rename(
     id = cohort_patient_id # id for person in this cohort study
@@ -81,7 +85,8 @@ ds_patient_events <- ds_patient_events %>%
     ,gender                   # biological sex
     ,age_group                # in groups of 5 years
     # encounter history
-    ,encounter_fact_key       # unique identifier for the encounter 
+    # ,encounter_fact_key       # unique identifier for the encounter 
+    ,encounter_id               # unique identifier for the encounter 
     ,encounter_class          # value from the D_Location dimension table in the data warehous
     ,encounter_type           # value from the D_Location dimension table in the data warehous
     # each encounter may consists of multiple events
@@ -98,14 +103,15 @@ ds_patient_events <- ds_patient_events %>%
     ,duration_days            # number of days between the Start_Day and End_Day (End_Day - Start_Day)
     # second, turn to analysis of encounter space
     ,addiction_location_count # patient has accessed services at a location that was used for the selection of the cohort
-    ,location_mapping_id      # unique id for VIHA program, connects to location map
+    # ,location_mapping_id      # unique id for VIHA program, connects to location map
+    ,location_map_id      # unique id for VIHA program, connects to location map
     ,palette_code             # unique id for colours of this palette
     ,palette_colour_name      # labels for clusters of service programs (aka 3T palette colours)
     # in case we missed to mention some variable by name
     ,dplyr::everything()#esle  
   ) %>% 
   dplyr::arrange(
-    id, encounter_fact_key # many rows may be needed to express an encounter
+    id, encounter_id # many rows may be needed to express an encounter
     # see https://github.com/IHACRU/ihacru-encounter-timeline/issues/1
     # unique encounter has a unique encounter_fact_key
     # there may be multiple rows representing a single encounter
