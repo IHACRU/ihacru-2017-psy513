@@ -10,14 +10,16 @@ This course will focus on types and sources of administrative health data and on
 ![image](https://cloud.githubusercontent.com/assets/2608073/26729360/6a4bf0ee-477b-11e7-8673-d5c9c5366623.png)
 
 # Instructors
-Scott Hofer, Kenneth Moselle, Andrey Koval
+[Scott Hofer](http://www.uvic.ca/socialsciences/psychology/people/faculty-directory/hoferscott.php), [Kenneth Moselle](https://www.linkedin.com/in/kenneth-moselle-2457b949), [Andrey Koval](https://github.com/andkov)
 
-# Reading 
-•	[Secondary Analysis of Electronic Health Records](http://www.springer.com/gp/book/9783319437408) (open access)
+# Materials
+•	[Lecture slides](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/lecture-slides-ihacru-2017-psyc513.pdf)
+•	Book: [Secondary Analysis of Electronic Health Records](http://www.springer.com/gp/book/9783319437408) (open access)
+
 
 # Prerequisites 
 
-Basic familiarity with R is recommended. While we do not exclude other statistical packages, the primary data handling, modeling, and graphing will be written out in R scripts. Student engagement with the data and models will take place via RStudio. Students will be expected to learn how to read, modify, and apply existing R scripts to perform data manipulation, model estimation, and publish results as dynamic documents. 
+Basic familiarity with R is recommended. While we do not exclude other statistical packages, the primary data handling, modeling, and graphing will be written out in R scripts. Student engagement with the data and models will take place via RStudio. Students will be expected to learn how to read, modify, and apply existing R scripts to perform data manipulation, model estimation, and publish results as dynamic documents.  If you are new to R, please explore resources for a different course, [uvic-2015-psy532](https://github.com/andkov/psy532), which gives a good introduction to the programming and statistical tools we will be using. Don't be discouraged if  you are new to R: all skill levels will be given a room for success and growth.
 
 # Grading
 
