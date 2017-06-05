@@ -44,8 +44,8 @@ ds_patient_events <- readr::read_csv(path_input_events)#  %>% as.data.frame()
 
 # reproduction in SRE causes the name of the first variable to have a prefex <U+FEFF>
 names(ds_patient_events)[1] <- "cohort_patient_id" # correct for UTF-8-BOM
+# ---- inspect-data -----------------------------------------------------------
 ds_patient_events %>% dplyr::glimpse()
-# 
 # ---- tweak-data -------------------------------------------------------------
 # standardize names : remove capital letters
 colnames(ds_patient_events) <- tolower(colnames(ds_patient_events))
@@ -134,7 +134,7 @@ saveRDS(ds_patient_events, paste0(path_save,".rds"))
 # readr::write_csv(ds_location_map, paste0(path_save,".csv"))
 
 
-# ---- inspect-data ----------------
+# ---- explore-data ----------------
 # PET - Patient Event Table
 ds %>% dplyr::glimpse()
 # How many patients are in this cohort?

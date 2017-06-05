@@ -23,12 +23,12 @@ path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sober
 path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
 testit::assert("File does not exist", base::file.exists(path_input_events))
 
-# ---- utility-functions ----------------------------------------------------- 
-
+# ---- utility-functions -------------------------------------------------------
+# functions local to this script go here. 
 # ---- load-data ---------------------------------------------------------------
 ds_patient_events <- readr::read_csv(path_input_events)
+# ---- inspect-data -----------------------------------------------------------
 ds_patient_events %>% dplyr::glimpse()
-# 
 # ---- tweak-data -------------------------------------------------------------
 # standardize names : remove capital letters
 colnames(ds_patient_events) <- tolower(colnames(ds_patient_events))
@@ -113,7 +113,7 @@ saveRDS(ds_patient_events, paste0(path_save,".rds"))
 # readr::write_csv(ds_location_map, paste0(path_save,".csv"))
 
 
-# ---- inspect-data ----------------
+# ---- explore-data ----------------
 # PET - Patient Event Table
 ds %>% dplyr::glimpse()
 # How many patients are in this cohort?

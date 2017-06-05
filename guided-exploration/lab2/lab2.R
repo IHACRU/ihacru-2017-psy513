@@ -31,10 +31,7 @@ source("./manipulation/function-support.R")  # assisting functions for data wran
 source("./manipulation/object-glossary.R")   # object definitions
 source("./scripts/common-functions.R")        # reporting functions and quick views
 source("./scripts/graphing/graph-presets.R") # font and color conventions
-
 # ---- declare-globals ---------------------------------------------------------
-
-
 # define output format for the report
 options(
   knitr.table.format = "html"
@@ -43,16 +40,9 @@ options(
 )
 # ---- utility-functions -------------------------------------------------------
 # functions local to this script go here. 
-
 # ---- load-data ---------------------------------------------------------------
-
+# ---- inspect-data -----------------------------------------------------------
 # ---- tweak-data ------------------------------------------------------------
-
-
-# ---- inspect-data-1 -----------------------------------------------------------
-
-# ---- utility-functions -------------------------------------------------------
-
 # ---- publish ---------------------------------------
 # This chunk will publish the summative report
 path_report_1 <- "./guided-exploration/lab2/lab2.Rmd"

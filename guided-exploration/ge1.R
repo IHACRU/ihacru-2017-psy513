@@ -54,6 +54,8 @@ replace_with_na <- function(x){
 ds <- readr::read_csv(path_input) %>% as.data.frame() 
 ds <- read.csv(path_input,
                stringsAsFactors=FALSE)
+# ---- inspect-data -----------------------------------------------------------
+ds %>% dplyr::glimpse()
 # ---- tweak-data -------------------------------------------------------------
 # reproduction in SRE causes the name of the first variable to have a prefex <U+FEFF>
 names(ds)[1] <- "location_map_id" # correct for UTF-8-BOM
@@ -69,7 +71,7 @@ ds <- ds
 # 
 ds %>% distinct(site_name) %>% slice(20:30)
 
-# ---- inspect-data ------------------------------------------
+# ---- explore-data ------------------------------------------
 # count unique values in each column
 ds %>% dplyr::summarise_all(n_distinct) %>% t()
 
