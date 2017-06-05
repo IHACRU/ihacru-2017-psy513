@@ -10,7 +10,9 @@ This course will focus on types and sources of administrative health data and on
 ![image](https://cloud.githubusercontent.com/assets/2608073/26729360/6a4bf0ee-477b-11e7-8673-d5c9c5366623.png)
 
 # Instructors
-[Scott Hofer](http://www.uvic.ca/socialsciences/psychology/people/faculty-directory/hoferscott.php), [Kenneth Moselle](https://www.linkedin.com/in/kenneth-moselle-2457b949), [Andrey Koval](https://github.com/andkov)
+- [Scott Hofer](http://www.uvic.ca/socialsciences/psychology/people/faculty-directory/hoferscott.php)  
+- [Kenneth Moselle](https://www.linkedin.com/in/kenneth-moselle-2457b949)  
+- [Andrey Koval](https://github.com/andkov)
 
 # Materials
 •	[Lecture slides](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/lecture-slides-ihacru-2017-psyc513.pdf)
