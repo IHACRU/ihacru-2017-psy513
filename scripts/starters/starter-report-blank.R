@@ -6,8 +6,7 @@ cat("\f") # clear console
 # ---- load-sources ------------------------------------------------------------
 # Call `base::source()` on any repo file that defines functions needed below.  Ideally, no real operations are performed.
 source("./scripts/common-functions.R") # used in multiple reports
-source("./scripts/graph-presets.R") # fonts, colors, themes 
-source("http://www.ucl.ac.uk/~ucakadl/ELECT.r") # load  ELECT functions
+source("./scripts/graphing/graph-presets.R") # fonts, colors, themes 
 
 # ---- load-packages -----------------------------------------------------------
 # Attach these packages so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path

@@ -1,35 +1,35 @@
 # knitr::stitch_rmd(script="./___/___.R", output="./___/___/___.md")
-#These first few lines run only when the file is run in RStudio, !!NOT when an Rmd/Rnw file calls it!!
-rm(list=ls(all=TRUE))  #Clear the variables from previous runs.
+# These first few lines run only when the file is run in RStudio, !!NOT when an Rmd/Rnw file calls it!!
+rm(list=ls(all=TRUE)) #Clear the memory of variables from previous run. This is not called by knitr, because it's above the first chunk.
 cat("\f") # clear console 
 
+# This script reads two files: patient event table + location map. 
+rm(list=ls(all=TRUE)) #Clear the memory of variables from previous run. This is not called by knitr, because it's above the first chunk.
+
 # ---- load-packages -----------------------------------------------------------
-# Attach these packages so their functions don't need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
-library(magrittr) # enables piping : %>% 
+library(ggplot2) #For graphing
+library(magrittr) #Pipes
+library(dplyr) # for shorter function names. but still prefer dplyr:: stems
+library(knitr) # dynamic documents
+library(rmarkdown) # dynamic
+library(kableExtra) # enhanced tables, see http://haozhu233.github.io/kableExtra/awesome_table_in_html.html
+# library(TabularManifest) # exploratory data analysis, see https://github.com/Melinae/TabularManifest
+requireNamespace("knitr", quietly=TRUE)
+requireNamespace("scales", quietly=TRUE) #For formating values in graphs
+requireNamespace("RColorBrewer", quietly=TRUE)
+requireNamespace("dplyr", quietly=TRUE)
+requireNamespace("DT", quietly=TRUE) # for dynamic tables
+# requireNamespace("plyr", quietly=TRUE)
+# requireNamespace("reshape2", quietly=TRUE) #For converting wide to long
+# requireNamespace("mgcv, quietly=TRUE) #For the Generalized Additive Model that smooths the longitudinal graphs.
 
 # ---- load-sources ------------------------------------------------------------
-# Call `base::source()` on any repo file that defines functions needed below.  Ideally, no real operations are performed.
-source("./scripts/common-functions.R") # used in multiple reports
-source("./scripts/graphing/graph-presets.R") # fonts, colors, themes 
-# Verify these packages are available on the machine, but their functions need to be qualified: http://r-pkgs.had.co.nz/namespace.html#search-path
-requireNamespace("ggplot2") # graphing
-# requireNamespace("readr") # data input
-requireNamespace("tidyr") # data manipulation
-requireNamespace("dplyr") # Avoid attaching dplyr, b/c its function names conflict with a lot of packages (esp base, stats, and plyr).
-requireNamespace("testit")# For asserting conditions meet expected patterns.
-# requireNamespace("car") # For it's `recode()` function.
-
-# ---- declare-globals ---------------------------------------------------------
-
-# ---- load-data ---------------------------------------------------------------
-# load the product of 0-ellis-island.R,  a list object containing data and metadata
-dto <- readRDS("./data/unshared/derived/dto.rds")
-# each element this list is another list:
-names(dto)
-# 3rd element - data set with unit data
-dplyr::tbl_df(dto[["unitData"]]) 
-# 4th element - dataset with augmented names and labels of the unit data
-dplyr::tbl_df(dto[["metaData"]])
+#Load any source files that contain/define functions, but that don't load any other types of variables
+#   into memory.  Avoid side effects and don't pollute the global environment.
+source("./manipulation/function-support.R")  # assisting functions for data wrangling and testing
+source("./manipulation/object-glossary.R")   # object definitions
+source("./scripts/common-functions.R")        # reporting functions and quick views
+source("./scripts/graphing/graph-presets.R") # font and color conventions
 
 # ---- inspect-data -------------------------------------------------------------
 
@@ -39,17 +39,8 @@ dplyr::tbl_df(dto[["metaData"]])
 # ---- basic-table --------------------------------------------------------------
 
 # ---- basic-graph --------------------------------------------------------------
-# this is how we can interact with the `dto` to call and graph data and metadata
-dto[["metaData"]] %>% 
-  dplyr::filter(type=="demographic") %>% 
-  dplyr::select(name,name_new,label)
 
-dto[["unitData"]]%>%
-  histogram_continuous("age_death", bin_width=1)
-
-dto[["unitData"]]%>%
-  histogram_discrete("msex")
-
+# Sonata form report structure
 # ---- dev-a-0 ---------------------------------
 # ---- dev-a-1 ---------------------------------
 # ---- dev-a-2 ---------------------------------
