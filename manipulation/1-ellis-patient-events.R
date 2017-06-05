@@ -65,6 +65,8 @@ ds_patient_events <- ds_patient_events %>%
   dplyr::rename(
     id = cohort_patient_id # id for person in this cohort study
     # age = age_group
+    ,encounter_id =  encounter_fact_key
+    ,location_map_id = location_mapping_id
   ) %>% 
   dplyr::mutate(
     palette_code        = ifelse(palette_code==0,NA,palette_code)
