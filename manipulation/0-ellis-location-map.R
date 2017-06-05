@@ -7,7 +7,7 @@ rm(list=ls(all=TRUE)) #Clear the memory of variables from previous run. This is 
 #   into memory.  Avoid side effects and don't pollute the global environment.
 source("./manipulation/function-support.R")  # assisting functions for data wrangling and testing
 source("./manipulation/object-glossary.R")   # object definitions
-source("./scripts/common-functions.R")        # reporting functions and quick views
+source("./scripts/common-functions.R")       # reporting functions and quick views
 source("./scripts/graphing/graph-presets.R") # font and color conventions
 # ---- load-packages -----------------------------------------------------------
 library(ggplot2) #For graphing
