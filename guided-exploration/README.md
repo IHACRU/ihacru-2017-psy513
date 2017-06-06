@@ -53,6 +53,7 @@ We discuss how VIHA organizes its EHR and how ACRU’s cross-continuum classific
 
 - _EHR address_ – a set of administrative descriptors that uniquely identify a program of health services in an EHR.
 - _Compressor_ – aka. Classifier. A discrete variable spanning all possible values of dimension/feature of interest (e.g. Population_Age, Clinical_Focus, etc) that we consider useful to know about a program. 
+- [_Star Schema_](../libs/images/star-schema-3t.png) - representation of how tables are related in the SQL query that returns the data
 
 # Coming up next:
 - GE1 – Location Mapping: EHR Addresses and Class Compressors  
