@@ -12,6 +12,8 @@ This course will focus on types and sources of administrative health data and on
 - A course on statistical modeling using R: [uvic-2015-psy532](https://github.com/andkov/psy532)
 - [Papers](libs/materials/research-papers.md) related to the use of electronic health records in clinical and academic research. (Please contribute!)
 - R programming [cheat sheets](https://www.rstudio.com/resources/cheatsheets/)
+- [Guided Explorations](guided-exploration/README.md)
+
 
 # Schedule
 ![image](https://cloud.githubusercontent.com/assets/2608073/26729360/6a4bf0ee-477b-11e7-8673-d5c9c5366623.png)
