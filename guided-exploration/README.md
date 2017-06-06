@@ -22,3 +22,43 @@ Each of the GE will be related to the following rubrics:
 - **Glossary**: what terms and concepts are central to this stage?
  
  
+# GE1 – Location Mapping: EHR Addresses and Class Compressors  
+### Overview. 
+We discuss how VIHA organizes its EHR and how ACRU’s cross-continuum classification system (aka “semantic layer”) prepares the clinical encounter data for general-purpose analysis. 
+### Script
+[`./manipulation/ge1.R`](ge1.R)
+### Questions
+- 1.1 What is a program of health service? How is it defined within Island Health? 
+- 1.2 How does CERNER Millennium identify a health program?
+- 1.3 How does VIHA’s Data Warehouse (DW) describe a health program?
+- 1.4 Why can’t we use the encounter data for research as is? Why do we need a `semantic layer`?
+- 1.5 What is a `compressor` and what is its function?
+- 1.6 What are properties and features of each of the compressors? 
+- 1.7 What is a `service class` and how is it useful?
+- 1.8 What is a `research palette` and what is its role in communication between external researchers and Island Health data curators?
+- 1.9 How is `service class ` different from a `palette color`?
+- 1.10 How do I know that this palette is good for my purposes?
+
+### Skills
+- setting up the software environment for data science project (R + RStudio + GitHub)
+- inputing location map data
+- transforming variables
+- producing aggregate views of frequencies
+
+### Learning Objectives
+- gain operational knowledge of assembling a research cohort from EHR using Cross-Continuum Classification (3C) system developed by ACRU. 
+- by the end of the period, the learner must be able to explore marginal frequencies of the VIHA's _Location Map_ using command idiom of the `dplyr` package
+
+### Glossary 
+
+- _EHR address_ – a set of administrative descriptors that uniquely identify a program of health services in an EHR.
+- _Compressor_ – aka. Classifier. A discrete variable spanning all possible values of dimension/feature of interest (e.g. Population_Age, Clinical_Focus, etc) that we consider useful to know about a program. 
+
+# Coming up next:
+- GE1 – Location Mapping: EHR Addresses and Class Compressors  
+- **GE2 – Patient Event Table: Sequencing encounters with the Service System**  
+- GE3 – Mapped Encounters: Cohort Summary and Timeline Visualization  
+- _Lab1 – Cohort Summary and Timeline Visualization_  
+- GE4 – Flattened Encounter Timelines: Quantifying Service Engagement  
+- GE5 – Statistical Models for Evaluating Encounter Profiles  
+- _Lab2 – Patterns of Service Utilization_  
