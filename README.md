@@ -5,6 +5,12 @@ A graduate course (**PSYC 513 - Statistical Methods**) taught at the University 
 
 This course will focus on types and sources of administrative health data and on the permissions, acquisition, management, and statistical analysis of administrative health and linked longitudinal encounter data. Analyses will cover a range of methods, including descriptive statistics, longitudinal trajectories, visualization of encounter timelines, multilevel modeling of within-person change, growth mixture models, and predictive models to quantify risk of future health events. This course will lead to an ongoing collaborative interdisciplinary research group, including data, policy, and statistical analysis experts. Simulated data from Island Health will be used for purposes of this course (signed non-disclosure agreement required for access to information and analysis tools).
 
+# Resources
+- [Lecture slides](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/lecture-slides-ihacru-2017-psyc513.pdf)
+- Book: [Secondary Analysis of Electronic Health Records](http://www.springer.com/gp/book/9783319437408) (open access)
+- This repository: https://github.com/IHACRU/ihacru-2017-psy513    
+- A course on statistical modeling using R: [uvic-2015-psy532](https://github.com/andkov/psy532)
+- [Papers](libs/materials/research-papers.md) related to the use of electronic health records in clinical and academic research. (Please contribute!)
 
 # Schedule
 ![image](https://cloud.githubusercontent.com/assets/2608073/26729360/6a4bf0ee-477b-11e7-8673-d5c9c5366623.png)
@@ -14,13 +20,7 @@ This course will focus on types and sources of administrative health data and on
 - [Kenneth Moselle](https://www.linkedin.com/in/kenneth-moselle-2457b949)  
 - [Andrey Koval](https://github.com/andkov)
 
-# Materials
-- [Lecture slides](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/lecture-slides-ihacru-2017-psyc513.pdf)
-- Book: [Secondary Analysis of Electronic Health Records](http://www.springer.com/gp/book/9783319437408) (open access)
-- This repository: https://github.com/IHACRU/ihacru-2017-psy513    
-
 # Prerequisites 
-
 Basic familiarity with R is recommended. While we do not exclude other statistical packages, the primary data handling, modeling, and graphing will be written out in R scripts. Student engagement with the data and models will take place via RStudio. Students will be expected to learn how to read, modify, and apply existing R scripts to perform data manipulation, model estimation, and publish results as dynamic documents.  If you are new to R, please explore resources for a different course, [uvic-2015-psy532](https://github.com/andkov/psy532), which gives a good introduction to the programming and statistical tools we will be using. Don't be discouraged if  you are new to R: all skill levels will be given a room for success and growth.
 
 # Grading
