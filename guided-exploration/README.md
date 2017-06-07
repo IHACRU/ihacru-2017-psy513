@@ -1,13 +1,14 @@
 Practical component guide.  
 =========
  
-- GE1 – Location Mapping: EHR Addresses and Class Compressors  
-- GE2 – Patient Event Table: Sequencing encounters with the Service System  
-- GE3 – Mapped Encounters: Cohort Summary and Timeline Visualization  
-- _Lab1 – Cohort Summary and Timeline Visualization_  
+# Table of Contents
+- [GE1](#ge1) – Location Mapping: EHR Addresses and Class Compressors  
+- [GE2](#ge2) – Patient Event Table: Sequencing encounters with the Service System
+- [GE3](#ge3) – Mapped Encounters: Cohort Summary and Timeline Visualization  
+- _[Lab1](#lab1) – Cohort Summary and Timeline Visualization_  
 - GE4 – Flattened Encounter Timelines: Quantifying Service Engagement  
 - GE5 – Statistical Models for Evaluating Encounter Profiles  
-- _Lab2 – Patterns of Service Utilization_  
+- _[Lab2](#lab2) – Patterns of Service Utilization_  
 
 
 The practical component of the course will consist of 5 guided explorations (GE) and 2 labs. 
@@ -78,9 +79,9 @@ We discuss how EHR is queried to obtain the list of clinical events which consti
 
 # Table of Contents
 - [GE1](#ge1) – Location Mapping: EHR Addresses and Class Compressors  
-- GE2 – Patient Event Table: Sequencing encounters with the Service System
-- GE3 – Mapped Encounters: Cohort Summary and Timeline Visualization  
-- _Lab1 – Cohort Summary and Timeline Visualization_  
+- [GE2](#ge2) – Patient Event Table: Sequencing encounters with the Service System
+- [GE3](#ge3) – Mapped Encounters: Cohort Summary and Timeline Visualization  
+- _[Lab1](#lab1) – Cohort Summary and Timeline Visualization_  
 - GE4 – Flattened Encounter Timelines: Quantifying Service Engagement  
 - GE5 – Statistical Models for Evaluating Encounter Profiles  
-- _Lab2 – Patterns of Service Utilization_  
+- _[Lab2](#lab2) – Patterns of Service Utilization_  
