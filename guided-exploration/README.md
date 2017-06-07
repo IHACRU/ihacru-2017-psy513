@@ -22,7 +22,8 @@ Each of the GE will be related to the following rubrics:
 - **Glossary**: what terms and concepts are central to this stage?
  
  
-# GE1 – Location Mapping: EHR Addresses and Class Compressors  
+# GE1
+## Location Mapping: EHR Addresses and Class Compressors  
 ### Overview. 
 We discuss how VIHA organizes its EHR and how ACRU’s cross-continuum classification system (aka “semantic layer”) prepares the clinical encounter data for general-purpose analysis. 
 ### Script
@@ -55,9 +56,29 @@ We discuss how VIHA organizes its EHR and how ACRU’s cross-continuum classific
 - _Compressor_ – aka. Classifier. A discrete variable spanning all possible values of dimension/feature of interest (e.g. Population_Age, Clinical_Focus, etc) that we consider useful to know about a program. 
 - [_Star Schema_](../libs/images/star-schema-3t.png) - representation of how tables are related in the SQL query that returns the data
 
-# Coming up next:
+# GE2
+## Patient Event Table: Sequencing encounters with the Service System  
+### Overview. 
+We discuss how EHR is queried to obtain the list of clinical events which constitute the medical histories of patients. We take a look at data sources available within Island Health and how they are combined to provide the data structure we will work with. We describe the useful indicators ERH may provide and how we can use them for research. 
+
+### Script
+[`./manipulation/ge2.R`](ge2.R)
+### Questions
+- 2.1 How does patient event table get assembled?
+- 2.2 How is a research cohort can defined? 
+- 2.3 What is the process by which a researcher obtains encounter data? Who is involved?
+- 2.4 What information about patient comes in a "standard" patient event table?
+
+### Skills
+- groupped summarizations using `dplyr`
+
+### Learning Objectives
+- be able to explaine how unique ehr addresses become palette colours 
+- know what kind of variables are supplied with in a standard patient event tabele
+
+# Table of Contents
 - GE1 – Location Mapping: EHR Addresses and Class Compressors  
-- **GE2 – Patient Event Table: Sequencing encounters with the Service System**  
+- GE2 – Patient Event Table: Sequencing encounters with the Service System
 - GE3 – Mapped Encounters: Cohort Summary and Timeline Visualization  
 - _Lab1 – Cohort Summary and Timeline Visualization_  
 - GE4 – Flattened Encounter Timelines: Quantifying Service Engagement  
