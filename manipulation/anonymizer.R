@@ -27,7 +27,7 @@ requireNamespace("DT", quietly=TRUE) # for dynamic tables
 # ---- declare-globals ---------------------------------------------------------
 # path_input_mapping  <- "./data-unshared/derived/dto_location_map.rds" # `./0-ellis-location-map.R`
 path_input   <- "./data-unshared/derived/dto_patient_events_addictions_4264.rds"
-path_save    <- "./data-unshared/derived/dto_patient_events_addictions_4264_anon"
+path_save    <- "./data-public/derived/dto_patient_events_addictions_4264_anon"
 testit::assert("File does not exist", base::file.exists(path_input))
 # ---- utility-functions ----------------------------------------------------- 
 # ---- load-data ---------------------------------------------------------------
@@ -79,7 +79,7 @@ scramble_one <- function(ds, person_id){
   return(d_person)
 }
 # Usage :
-d <- ds %>% scramble_one(10042753)
+# d <- ds %>% scramble_one(10042753)
 
 scramble_many <- function(ds, sample_size){
   # sample_size = 10
@@ -94,7 +94,7 @@ scramble_many <- function(ds, sample_size){
 
 set.seed(1)
 d <- ds %>% scramble_many(10)
-# d <- d %>% 
+d <- d %>%
   dplyr::mutate(
     encounter_id = encounter_id + round(runif(1,1,10000),0)
   )
