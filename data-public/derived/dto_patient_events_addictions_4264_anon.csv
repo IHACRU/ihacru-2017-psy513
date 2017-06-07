@@ -1,0 +1,326 @@
+id,gender,age_group,encounter_id,encounter_class,encounter_type,event_type,event_title,event_detail,event_count,event_year,event_month,event_start_date,event_end_date,start_day,end_day,duration_days,addiction_location_count,location_map_id,palette_code,palette_colour_name
+1AB5C92,Female,25 - 29,42230255.0,Inpatient,Inpatient Acute,Encounter Only,"Child, Youth & Family",Maternity,1,2013,1,2013-01-21,2013-01-23,660,662,2,0,1673,6,"Acute Care - Maternity, Perinatal"
+1AB5C92,Female,25 - 29,20125520.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2015,12,2015-12-14,2016-01-03,1594,1614,20,1,874,10,Addictions - Post Withdrawal Stabilization (secondary level)
+1AB5C92,Female,25 - 29,36191729.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2011,6,2011-06-23,2011-07-10,31,48,17,1,903,10,Addictions - Post Withdrawal Stabilization (secondary level)
+1AB5C92,Female,25 - 29,86996036.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2016,5,2016-05-27,2016-10-28,11,165,154,0,601,12,Addictions - Ambulatory (secondary level)
+1AB5C92,Female,25 - 29,55289445.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2009,7,2009-07-31,2011-10-19,0,810,810,0,1261,12,Addictions - Ambulatory (secondary level)
+1AB5C92,Female,25 - 29,22083062.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2015,6,2015-06-09,2015-06-15,1517,1523,6,1,2116,13,Addictions - Detox (secondary level)
+1AB5C92,Female,25 - 29,29334171.0,Emergency,Emergency,Encounter Only,NA,NA,1,2014,10,2014-10-24,2014-10-24,1298,1298,0,0,1429,28,ED - Med-Surg
+1AB5C92,Female,25 - 29,47136843.0,Other,Specimen,Encounter Only,Outpatient,Laboratory,1,2011,12,2011-12-29,2011-12-29,132,132,0,0,807,36,Lab - Island Health - General
+1AB5C92,Female,25 - 29,33977348.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2012,4,2012-04-16,2012-04-16,144,144,0,0,2230,38,Medical Imaging
+1AB5C92,Female,25 - 29,40405740.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2013,6,2013-06-10,2013-06-17,670,677,7,0,167,65,Clinical Intake - Addictions
+1AB5C92,Female,25 - 29,41872894.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2012,9,2012-09-20,2012-09-28,263,271,8,0,167,65,Clinical Intake - Addictions
+1AB5C92,Female,25 - 29,91664860.0,Recurring,Open Encounter,Encounter Only,"Child, Youth & Family",Obstetrics,1,2017,4,2017-04-07,2017-05-12,1757,1792,35,0,2021,71,Obstetrics - Ambulatory
+1AB5C92,Female,25 - 29,39944218.0,Outpatient,Day Care,Encounter Only,Surgery,Urology,1,2013,11,2013-11-07,2013-11-07,843,843,0,0,1448,93,Surgical - Procedure
+977D203,Male,45 - 49,26276423.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2014,7,2014-07-06,2014-07-07,468,469,1,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,40734987.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2013,4,2013-04-12,2013-04-13,739,740,1,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,91674350.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2017,3,2017-03-31,2017-04-01,688,689,1,1,1582,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,35738526.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2012,6,2012-06-20,2012-06-21,1136,1137,1,1,916,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,30060555.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2014,5,2014-05-26,2014-05-27,179,180,1,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,25512557.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2014,3,2014-03-02,2014-03-03,1014,1015,1,1,916,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,44186773.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2012,9,2012-09-27,2012-09-27,534,534,0,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,36011436.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2012,7,2012-07-23,2012-07-24,297,298,1,1,916,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,40274284.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2013,6,2013-06-10,2013-06-11,657,658,1,1,1554,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,31296668.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2012,2,2012-02-04,2012-02-04,175,175,0,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,90188218.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2016,12,2016-12-26,2016-12-27,1899,1900,1,1,1582,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,20461999.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2015,10,2015-10-01,2015-10-02,983,984,1,1,1773,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,87120526.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2016,6,2016-06-04,2016-06-05,1702,1703,1,1,1582,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,43912921.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2012,10,2012-10-26,2012-10-27,450,451,1,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,39756628.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2013,4,2013-04-09,2013-04-09,3102,3102,0,1,1554,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,37852481.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2011,10,2011-10-30,2011-10-31,206,207,1,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+977D203,Male,45 - 49,30357039.0,Emergency,Emergency,Encounter Only,NA,NA,1,2014,8,2014-08-31,2014-09-01,1217,1218,1,0,1429,28,ED - Med-Surg
+977D203,Male,45 - 49,37657794.0,Emergency,Emergency,Encounter Only,NA,NA,1,2012,8,2012-08-30,2012-08-30,461,461,0,0,1429,28,ED - Med-Surg
+977D203,Male,45 - 49,37587106.0,Emergency,Emergency,Encounter Only,NA,NA,1,2012,9,2012-09-03,2012-09-03,517,517,0,0,1429,28,ED - Med-Surg
+977D203,Male,45 - 49,42904960.0,Emergency,Emergency,Encounter Only,NA,NA,1,2012,12,2012-12-28,2012-12-28,563,563,0,0,1429,28,ED - Med-Surg
+977D203,Male,45 - 49,24929450.0,Emergency,Emergency,Encounter Only,NA,NA,1,2015,4,2015-04-28,2015-04-28,1324,1324,0,0,1264,28,ED - Med-Surg
+977D203,Male,45 - 49,88228925.0,Outpatient,Day Care,Surgery,Medicine,Colonoscopy (FIT Positive Yes CSP) SN,1,2016,8,2016-08-18,2017-05-12,2869,3136,267,0,1765,31,Endoscopy
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Albumin Level,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,ALT,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Bilirubin Total,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Complete Blood Count and Differential,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Confirmatory Hepatitis C Antibody,1,2016,3,2016-03-08,2016-03-15,1793,1800,7,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Hepatitis C Antibody,1,2016,3,2016-03-07,2016-03-08,1792,1793,1,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,HIV Quantitative,1,2016,3,2016-03-07,2016-03-08,1792,1793,1,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Potassium Level,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Protein Total,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Sodium Level,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,xxAutomated Diff,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Outpatient,Hepatitis B Careset,1,2016,3,2016-03-08,2016-03-08,1793,1793,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Alkaline Phosphatase,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Calcium Level,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Creatinine,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,GGT,1,2016,3,2016-03-07,2016-03-07,1792,1792,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Hepatitis A Antibody IgG,1,2016,3,2016-03-08,2016-03-08,1793,1793,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Hepatitis B Core Antibody Total,1,2016,3,2016-03-08,2016-03-08,1793,1793,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Hepatitis B Surface Antibody,1,2016,3,2016-03-08,2016-03-08,1793,1793,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,Hepatitis B Surface Antigen,1,2016,3,2016-03-08,2016-03-08,1793,1793,0,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,85708971.0,Other,Specimen,General Lab,Laboratory,xxCD4,1,2016,3,2016-03-07,2016-03-08,1792,1793,1,0,1109,36,Lab - Island Health - General
+977D203,Male,45 - 49,29723724.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2014,10,2014-10-27,2014-10-27,881,881,0,0,483,38,Medical Imaging
+977D203,Male,45 - 49,89048614.0,Outpatient,Ambulatory,Radiology,Diagnostic Imaging,CT Spine Lumbar w/o Contrast,1,2016,10,2016-10-12,2016-10-14,384,386,2,0,1853,38,Medical Imaging
+977D203,Male,45 - 49,45082180.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2013,2,2013-02-28,2013-02-28,611,611,0,0,2230,38,Medical Imaging
+977D203,Male,45 - 49,28544502.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2014,7,2014-07-18,2014-07-18,1353,1353,0,0,671,38,Medical Imaging
+977D203,Male,45 - 49,88058166.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2016,8,2016-08-06,2016-08-06,1484,1484,0,0,1853,38,Medical Imaging
+977D203,Male,45 - 49,30326126.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2014,7,2014-07-29,2014-07-29,889,889,0,0,1977,38,Medical Imaging
+977D203,Male,45 - 49,19886380.0,Recurring,Open Encounter,Encounter Only,Outpatient,Outpatient,1,2014,2,2014-02-06,2017-05-12,1435,2626,1191,0,227,40,"Med - Surg, Ambulatory"
+977D203,Male,45 - 49,41529325.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2013,4,2013-04-16,2014-08-27,301,799,498,0,167,65,Clinical Intake - Addictions
+977D203,Male,45 - 49,20286984.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2015,12,2015-12-01,2015-12-01,787,787,0,0,922,78,Orthopedic
+977D203,Male,45 - 49,34530491.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2011,6,2011-06-17,2011-06-17,70,70,0,0,1657,78,Orthopedic
+977D203,Male,45 - 49,34125343.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2012,2,2012-02-20,2012-02-20,460,460,0,0,1657,78,Orthopedic
+977D203,Male,45 - 49,39225226.0,Outpatient,Day Care,Encounter Only,Surgery,Opthamology,1,2013,6,2013-06-06,2013-06-06,607,607,0,0,388,93,Surgical - Procedure
+977D203,Male,45 - 49,29798796.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2014,4,2014-04-24,2014-04-24,1053,1053,0,0,567,96,Urological
+102DBC2,Male,35 - 39,25439078.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2014,6,2014-06-01,2014-06-02,1126,1127,1,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,41652293.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2012,11,2012-11-16,2012-11-16,591,591,0,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,39815674.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2012,9,2012-09-12,2012-09-12,527,527,0,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,29026413.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2014,3,2014-03-20,2014-03-21,574,575,1,1,916,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,92068717.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2017,4,2017-04-27,2017-04-27,2711,2711,0,1,1582,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,24130052.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2015,6,2015-06-20,2015-06-21,1489,1490,1,1,916,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,39174510.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2013,11,2013-11-04,2013-11-05,893,894,1,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,29483966.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2014,5,2014-05-23,2014-05-23,1120,1120,0,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,27393990.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2014,10,2014-10-13,2014-10-13,1285,1285,0,1,139,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,91928883.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2017,4,2017-04-18,2017-04-19,2012,2013,1,1,1582,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,23424929.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2015,7,2015-07-18,2015-07-18,1380,1380,0,1,1773,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,88162301.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2016,8,2016-08-13,2016-08-14,1866,1867,1,1,1582,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,47202901.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2013,3,2013-03-29,2013-03-30,731,732,1,1,1554,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,91795528.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2017,4,2017-04-08,2017-04-09,2193,2194,1,1,1582,11,Addictions - Sobering & Assessment Centre (primary care)
+102DBC2,Male,35 - 39,19818896.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2012,10,2012-10-05,2017-05-12,498,2178,1680,0,718,12,Addictions - Ambulatory (secondary level)
+102DBC2,Male,35 - 39,25763847.0,Emergency,Emergency,Encounter Only,NA,NA,1,2014,1,2014-01-03,2014-01-03,871,871,0,0,1514,28,ED - Med-Surg
+102DBC2,Male,35 - 39,23860943.0,Emergency,Emergency,Encounter Only,NA,NA,1,2015,10,2015-10-22,2015-10-22,2073,2073,0,0,971,28,ED - Med-Surg
+102DBC2,Male,35 - 39,28892619.0,Emergency,Emergency,Encounter Only,NA,NA,1,2014,11,2014-11-22,2014-11-22,1271,1271,0,0,1429,28,ED - Med-Surg
+102DBC2,Male,35 - 39,42143083.0,Emergency,Emergency,Encounter Only,NA,NA,1,2013,12,2013-12-17,2013-12-18,1839,1840,1,0,1429,28,ED - Med-Surg
+102DBC2,Male,35 - 39,43901372.0,Emergency,Emergency,Encounter Only,NA,NA,1,2011,12,2011-12-16,2011-12-16,0,0,0,0,1429,28,ED - Med-Surg
+102DBC2,Male,35 - 39,30575337.0,Emergency,Emergency,Encounter Only,NA,NA,1,2014,4,2014-04-30,2014-04-30,1061,1061,0,0,1429,28,ED - Med-Surg
+102DBC2,Male,35 - 39,92016369.0,Emergency,Emergency,Encounter Only,NA,NA,1,2017,4,2017-04-24,2017-04-24,1760,1760,0,0,520,28,ED - Med-Surg
+102DBC2,Male,35 - 39,47012732.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Laboratory,1,2011,12,2011-12-28,2011-12-28,142,142,0,0,182,36,Lab - Island Health - General
+102DBC2,Male,35 - 39,29904969.0,Recurring,Open Encounter,Encounter Only,Rehab,Acute Rehabilitation,1,2014,2,2014-02-28,2014-09-12,1471,1667,196,0,1499,40,"Med - Surg, Ambulatory"
+102DBC2,Male,35 - 39,20015383.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2015,12,2015-12-02,2015-12-30,2324,2352,28,0,167,65,Clinical Intake - Addictions
+102DBC2,Male,35 - 39,33889837.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2011,2,2011-02-14,2011-04-18,0,63,63,0,167,65,Clinical Intake - Addictions
+102DBC2,Male,35 - 39,43294412.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2012,11,2012-11-22,2013-01-21,500,560,60,0,167,65,Clinical Intake - Addictions
+102DBC2,Male,35 - 39,24683873.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2015,10,2015-10-28,2015-10-28,1562,1562,0,0,251,78,Orthopedic
+102DBC2,Male,35 - 39,31467193.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2012,5,2012-05-03,2012-05-03,381,381,0,0,922,78,Orthopedic
+102DBC2,Male,35 - 39,87224056.0,Outpatient,Ambulatory,Radiology,Diagnostic Imaging,XR Tibia/Fibula Right,1,2016,6,2016-06-14,2016-06-15,1813,1814,1,0,755,78,Orthopedic
+102DBC2,Male,35 - 39,88001591.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2016,8,2016-08-03,2016-08-03,2162,2162,0,0,755,78,Orthopedic
+102DBC2,Male,35 - 39,25912238.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2014,8,2014-08-05,2014-08-05,924,924,0,0,922,78,Orthopedic
+C9B9133,Male,60 - 64,28224980.0,Inpatient,Inpatient Acute,Encounter Only,Medicine,Medicine Hospitalist,1,2014,1,2014-01-17,2014-01-18,1079,1080,1,0,1170,5,Acute Care - Med-Surg
+C9B9133,Male,60 - 64,87256532.0,Inpatient,MHAS - Residential,General Lab,Laboratory,Complete Blood Count and Differential,1,2016,6,2016-06-13,2016-06-14,2068,2069,1,1,1748,13,Addictions - Detox (secondary level)
+C9B9133,Male,60 - 64,87256532.0,Inpatient,MHAS - Residential,General Lab,Laboratory,Glucose Random,1,2016,6,2016-06-13,2016-06-14,2068,2069,1,1,1748,13,Addictions - Detox (secondary level)
+C9B9133,Male,60 - 64,87256532.0,Inpatient,MHAS - Residential,General Lab,Laboratory,INR,1,2016,6,2016-06-13,2016-06-14,2068,2069,1,1,1748,13,Addictions - Detox (secondary level)
+C9B9133,Male,60 - 64,87256532.0,Inpatient,MHAS - Residential,General Lab,Mental Health,Coag Panel Careset,1,2016,6,2016-06-13,2016-06-14,2068,2069,1,1,1748,13,Addictions - Detox (secondary level)
+C9B9133,Male,60 - 64,87256532.0,Inpatient,MHAS - Residential,General Lab,Laboratory,Macroscopic Urinalysis,1,2016,6,2016-06-13,2016-06-13,2068,2068,0,1,1748,13,Addictions - Detox (secondary level)
+C9B9133,Male,60 - 64,87256532.0,Inpatient,MHAS - Residential,General Lab,Laboratory,PTT,1,2016,6,2016-06-13,2016-06-14,2068,2069,1,1,1748,13,Addictions - Detox (secondary level)
+C9B9133,Male,60 - 64,87256532.0,Inpatient,MHAS - Residential,General Lab,Laboratory,xxAutomated Diff,1,2016,6,2016-06-14,2016-06-14,2069,2069,0,1,1748,13,Addictions - Detox (secondary level)
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Acute Hepatitis Careset,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Albumin Level,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,ALT,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Bilirubin Total,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Calcium Ionized Level,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Carbon Dioxide Total,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Chloride Level,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Complete Blood Count and Differential,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Hepatitis A Antibody IgM,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Magnesium Level,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Potassium Level,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Protein Total,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Sodium Level,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Syphilis Serology,1,2017,1,2017-01-26,2017-01-27,1492,1493,1,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Thyroid Stimulating Hormone,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,xxAutomated Diff,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,xxAutomated Diff,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,xxCoagulation Hold Tube,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,xxProtein Electrophoresis,1,2017,1,2017-01-26,2017-01-27,1492,1493,1,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,Radiology,Diagnostic Imaging,XR Chest 2 Views,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Medicine,SI ED Basic Careset,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Alkaline Phosphatase,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,ALT,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Anion Gap,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,AST,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Complete Blood Count and Differential,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Creatinine,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,GGT,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Glucose Random,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,hCG Qualitative,1,2017,1,2017-01-25,2017-01-25,1491,1491,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Hepatitis B Core Antibody Total,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Hepatitis B Surface Antibody,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Hepatitis B Surface Antigen,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Hepatitis C Antibody,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,HIV Ag/Ab Combination Assay,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Lipase Level,1,2017,1,2017-01-26,2017-01-26,1492,1492,0,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Protein Electrophoresis Careset,1,2017,1,2017-01-26,2017-01-27,1492,1493,1,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,90640891.0,Inpatient,Inpatient Acute,Radiology,Diagnostic Imaging,HH ECG Electrocardiogram,1,2017,1,2017-01-25,2017-01-28,1491,1494,3,0,1631,28,ED - Med-Surg
+C9B9133,Male,60 - 64,42528226.0,Emergency,Emergency,Encounter Only,NA,NA,1,2012,12,2012-12-26,2012-12-26,632,632,0,0,595,28,ED - Med-Surg
+C9B9133,Male,60 - 64,28765572.0,Emergency,Emergency,Encounter Only,NA,NA,1,2014,12,2014-12-20,2014-12-20,1153,1153,0,0,934,28,ED - Med-Surg
+C9B9133,Male,60 - 64,37119780.0,Emergency,Emergency,Encounter Only,NA,NA,1,2011,5,2011-05-29,2011-05-29,1686,1686,0,0,768,28,ED - Med-Surg
+C9B9133,Male,60 - 64,30202859.0,Outpatient,Ambulatory,Encounter Only,Medicine,Medicine (Unspecified),1,2014,5,2014-05-27,2014-05-27,1148,1148,0,0,513,29,Electrodiagnostics
+C9B9133,Male,60 - 64,92020489.0,Home Care,Home Care,Encounter Only,NA,NA,1,2017,4,2017-04-24,2017-05-12,278,296,18,0,1983,34,H&CC and Related Supports
+C9B9133,Male,60 - 64,37988510.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Laboratory,1,2012,8,2012-08-31,2012-08-31,345,345,0,0,766,36,Lab - Island Health - General
+C9B9133,Male,60 - 64,28595579.0,Other,Specimen,Encounter Only,Outpatient,Laboratory,1,2014,10,2014-10-20,2014-10-20,1497,1497,0,0,639,36,Lab - Island Health - General
+C9B9133,Male,60 - 64,27196698.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Laboratory,1,2014,1,2014-01-13,2014-01-13,2741,2741,0,0,766,36,Lab - Island Health - General
+C9B9133,Male,60 - 64,25603783.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Laboratory,1,2014,12,2014-12-01,2014-12-01,1687,1687,0,0,766,36,Lab - Island Health - General
+C9B9133,Male,60 - 64,27512904.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Laboratory,1,2014,11,2014-11-14,2014-11-14,1633,1633,0,0,2223,36,Lab - Island Health - General
+C9B9133,Male,60 - 64,30757601.0,Other,Specimen,Encounter Only,Outpatient,Laboratory,1,2011,9,2011-09-01,2011-09-01,1421,1421,0,0,807,36,Lab - Island Health - General
+C9B9133,Male,60 - 64,41491822.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2012,11,2012-11-15,2012-11-15,290,290,0,0,1526,38,Medical Imaging
+C9B9133,Male,60 - 64,42786155.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2013,11,2013-11-20,2013-11-20,964,964,0,0,1526,38,Medical Imaging
+C9B9133,Male,60 - 64,34221331.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2011,4,2011-04-16,2011-04-16,0,0,0,0,2230,38,Medical Imaging
+C9B9133,Male,60 - 64,32239042.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2012,4,2012-04-09,2012-04-09,210,210,0,0,671,38,Medical Imaging
+C9B9133,Male,60 - 64,89758041.0,Outpatient,Ambulatory,Radiology,Diagnostic Imaging,XR Chest AP/PA 1 View,1,2016,11,2016-11-26,2016-11-26,5,5,0,0,1853,38,Medical Imaging
+C9B9133,Male,60 - 64,22212730.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2015,1,2015-01-13,2015-01-13,1349,1349,0,0,671,38,Medical Imaging
+C9B9133,Male,60 - 64,90629691.0,Outpatient,Ambulatory,Radiology,Diagnostic Imaging,XR Chest AP/PA 1 View,1,2017,1,2017-01-25,2017-01-25,1906,1906,0,0,243,38,Medical Imaging
+C9B9133,Male,60 - 64,35317685.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2012,3,2012-03-20,2012-03-20,1153,1153,0,0,671,38,Medical Imaging
+C9B9133,Male,60 - 64,42685709.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2012,11,2012-11-21,2012-11-21,510,510,0,0,483,38,Medical Imaging
+C9B9133,Male,60 - 64,85807367.0,Outpatient,Ambulatory,Radiology,Diagnostic Imaging,MRI Spine Lumbar w/o Contrast,1,2016,2,2016-02-10,2016-03-13,1633,1665,32,0,243,38,Medical Imaging
+C9B9133,Male,60 - 64,30326126.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2014,7,2014-07-29,2014-07-29,889,889,0,0,1977,38,Medical Imaging
+C9B9133,Male,60 - 64,41113956.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2013,9,2013-09-20,2013-10-21,2622,2653,31,0,167,65,Clinical Intake - Addictions
+C9B9133,Male,60 - 64,26506596.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2014,5,2014-05-07,2014-05-07,1253,1253,0,0,876,78,Orthopedic
+C9B9133,Male,60 - 64,19975582.0,Recurring,Open Encounter,Encounter Only,Rehab,Acute Rehabilitation,1,2015,7,2015-07-01,2017-05-12,3092,3773,681,0,1825,88,"Rehab- Physical, Cognitive (non-psych)"
+C9B9133,Male,60 - 64,29464770.0,Inpatient,Inpatient Acute,Encounter Only,Medicine,Medicine Family Practice,1,2014,6,2014-06-22,2014-06-28,1360,1366,6,0,787,92,"Surgical - Pre, Post"
+C9B9133,Male,60 - 64,42338195.0,Inpatient,Inpatient Acute,Encounter Only,Surgery,Surgery,1,2013,8,2013-08-17,2013-08-23,647,653,6,0,2232,92,"Surgical - Pre, Post"
+C9B9133,Male,60 - 64,20731114.0,Inpatient,Inpatient Acute,Encounter Only,Medicine,Medicine Hospitalist,1,2015,5,2015-05-04,2015-05-19,1796,1811,15,0,2232,92,"Surgical - Pre, Post"
+C9B9133,Male,60 - 64,85331556.0,Inpatient,Inpatient Acute,Encounter Only,Surgery,Surgery,1,2016,2,2016-02-13,2016-02-21,1758,1766,8,0,2180,92,"Surgical - Pre, Post"
+C9B9133,Male,60 - 64,34856946.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Pre-Admission Clinic,1,2012,8,2012-08-20,2012-08-20,445,445,0,0,1177,92,"Surgical - Pre, Post"
+C9B9133,Male,60 - 64,88451864.0,Outpatient,Day Care,Encounter Only,Surgery,Enterology,1,2016,9,2016-09-19,2016-09-19,1052,1052,0,0,1487,93,Surgical - Procedure
+DC2302,Male,45 - 49,31006937.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2011,6,2011-06-02,2011-06-12,8,18,10,0,1612,12,Addictions - Ambulatory (secondary level)
+DC2302,Male,45 - 49,28264626.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2014,4,2014-04-15,2014-04-25,931,941,10,1,2116,13,Addictions - Detox (secondary level)
+DC2302,Male,45 - 49,84937891.0,Emergency,Emergency,Encounter Only,NA,NA,1,2016,1,2016-01-22,2016-01-22,1481,1481,0,0,1429,28,ED - Med-Surg
+DC2302,Male,45 - 49,39264334.0,Emergency,Emergency,Encounter Only,NA,NA,1,2013,12,2013-12-06,2013-12-06,810,810,0,0,1429,28,ED - Med-Surg
+DC2302,Male,45 - 49,37683060.0,Emergency,Emergency,Encounter Only,NA,NA,1,2013,10,2013-10-06,2013-10-06,770,770,0,0,934,28,ED - Med-Surg
+DC2302,Male,45 - 49,32201838.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2012,8,2012-08-08,2012-08-08,572,572,0,0,2230,38,Medical Imaging
+DC2302,Male,45 - 49,30566397.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2014,4,2014-04-30,2014-06-23,1000,1054,54,0,167,65,Clinical Intake - Addictions
+DC2302,Male,45 - 49,31633093.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2011,9,2011-09-06,2011-09-07,157,158,1,0,167,65,Clinical Intake - Addictions
+1A491A2,Female,20 - 24,36561033.0,Inpatient,Inpatient Acute,Encounter Only,Medicine,Clinical Teaching Unit,1,2012,5,2012-05-24,2012-05-24,1731,1731,0,0,1181,5,Acute Care - Med-Surg
+1A491A2,Female,20 - 24,21553673.0,Inpatient,Inpatient Acute,Encounter Only,Medicine,Medicine Hospitalist,1,2015,2,2015-02-08,2015-02-10,16,18,2,0,1181,5,Acute Care - Med-Surg
+1A491A2,Female,20 - 24,45835799.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2013,11,2013-11-30,2013-12-03,873,876,3,1,2116,13,Addictions - Detox (secondary level)
+1A491A2,Female,20 - 24,33446252.0,Emergency,Emergency,Encounter Only,NA,NA,1,2011,8,2011-08-13,2011-08-13,112,112,0,0,934,28,ED - Med-Surg
+1A491A2,Female,20 - 24,42856468.0,Other,Specimen,Encounter Only,Outpatient,Laboratory,1,2013,1,2013-01-22,2013-01-22,646,646,0,0,1810,36,Lab - Island Health - General
+1A491A2,Female,20 - 24,22075076.0,Outpatient,Ambulatory,Diagnosis,Diseases of the digestive system,"K42.9,  Umbilical hernia without obs or gangrene",1,2016,2,2016-02-29,2016-02-29,1369,1369,0,0,671,38,Medical Imaging
+1A491A2,Female,20 - 24,89323079.0,Outpatient,Ambulatory,Radiology,Diagnostic Imaging,XR Chest 2 Views,1,2016,10,2016-10-29,2016-10-29,1975,1975,0,0,1853,38,Medical Imaging
+1A491A2,Female,20 - 24,45560123.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2010,1,2010-01-15,2013-03-31,35,1206,1171,0,1819,58,Residential Care - MHSU - Lower Support (secondary level)
+1A491A2,Female,20 - 24,45272228.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2013,8,2013-08-28,2013-10-07,822,862,40,0,167,65,Clinical Intake - Addictions
+1A491A2,Female,20 - 24,37874802.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2013,5,2013-05-01,2014-08-27,688,1171,483,0,167,65,Clinical Intake - Addictions
+1A491A2,Female,20 - 24,88804502.0,Recurring,Open Encounter,Encounter Only,NA,NA,1,2016,9,2016-09-26,2016-09-30,1999,2003,4,0,93,83,MHSU Specialist Consultation - Acute Care
+1A491A2,Female,20 - 24,25133798.0,Outpatient,Day Care,Encounter Only,Surgery,Plastic,1,2015,9,2015-09-29,2015-09-29,1617,1617,0,0,388,93,Surgical - Procedure
+1A491A2,Female,20 - 24,91843985.0,Recurring,Recurring/Series,Encounter Only,NA,NA,1,2017,4,2017-04-12,2017-04-12,2328,2328,0,0,209,99,Med-Surg - Ambulatory Episodic - Mixed Ages
+8A1A543,Male,50 - 54,29166871.0,Inpatient,Inpatient Acute,Encounter Only,Medicine,Medical Assessment,1,2014,9,2014-09-30,2014-10-02,2377,2379,2,0,1611,5,Acute Care - Med-Surg
+8A1A543,Male,50 - 54,84914188.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2016,1,2016-01-07,2017-05-12,2137,2628,491,0,718,12,Addictions - Ambulatory (secondary level)
+8A1A543,Male,50 - 54,23333686.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2015,2,2015-02-19,2015-08-20,936,1118,182,0,718,12,Addictions - Ambulatory (secondary level)
+8A1A543,Male,50 - 54,22979819.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2015,6,2015-06-14,2015-06-21,1524,1531,7,1,2116,13,Addictions - Detox (secondary level)
+8A1A543,Male,50 - 54,85733822.0,Emergency,Emergency,Radiology,Diagnostic Imaging,CT Wrist w/o Contrast Left,1,2016,3,2016-03-08,2016-03-09,1708,1709,1,0,520,28,ED - Med-Surg
+8A1A543,Male,50 - 54,85733822.0,Emergency,Emergency,Radiology,Diagnostic Imaging,XR Wrist and Scaphoid Left,1,2016,3,2016-03-08,2016-03-08,1708,1708,0,0,520,28,ED - Med-Surg
+8A1A543,Male,50 - 54,85733822.0,Emergency,Emergency,Radiology,Diagnostic Imaging,XR Wrist Limited 2 Views Left,1,2016,3,2016-03-08,2016-03-09,1708,1709,1,0,520,28,ED - Med-Surg
+8A1A543,Male,50 - 54,33479887.0,Emergency,Emergency,Encounter Only,NA,NA,1,2011,10,2011-10-13,2011-10-13,258,258,0,0,1429,28,ED - Med-Surg
+8A1A543,Male,50 - 54,25124039.0,Emergency,Emergency,Encounter Only,NA,NA,1,2015,3,2015-03-27,2015-03-27,275,275,0,0,934,28,ED - Med-Surg
+8A1A543,Male,50 - 54,35278510.0,Emergency,Emergency,Encounter Only,NA,NA,1,2012,1,2012-01-27,2012-01-27,876,876,0,0,878,28,ED - Med-Surg
+8A1A543,Male,50 - 54,30130758.0,Emergency,Emergency,Encounter Only,NA,NA,1,2014,7,2014-07-28,2014-07-28,2842,2842,0,0,34,28,ED - Med-Surg
+8A1A543,Male,50 - 54,86351658.0,Emergency,Emergency,Radiology,Diagnostic Imaging,HH ECG Electrocardiogram,1,2016,4,2016-04-17,2016-04-19,1351,1353,2,0,520,28,ED - Med-Surg
+8A1A543,Male,50 - 54,25101449.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Laboratory,1,2015,7,2015-07-29,2015-07-29,1574,1574,0,0,2076,36,Lab - Island Health - General
+8A1A543,Male,50 - 54,23561737.0,Other,Specimen,Encounter Only,Outpatient,Laboratory,1,2015,9,2015-09-18,2015-09-18,2103,2103,0,0,807,36,Lab - Island Health - General
+8A1A543,Male,50 - 54,22902542.0,Other,Specimen,Encounter Only,Outpatient,Laboratory,1,2015,12,2015-12-16,2015-12-16,1713,1713,0,0,766,36,Lab - Island Health - General
+8A1A543,Male,50 - 54,91976820.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2017,4,2017-04-21,2017-04-21,2015,2015,0,0,1853,38,Medical Imaging
+8A1A543,Male,50 - 54,44110092.0,Inpatient,Inpatient Acute,Encounter Only,Medicine,Clinical Decision Unit,1,2013,8,2013-08-23,2013-08-24,390,391,1,0,2038,47,Dedicated Psychiatric Emergency Settings - Emergency Response
+8A1A543,Male,50 - 54,91041652.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2017,2,2017-02-21,2017-05-12,2119,2199,80,0,614,62,MHSU - Urgent  or Short-Term Ambulatory
+8A1A543,Male,50 - 54,26746532.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2014,1,2014-01-09,2014-02-03,973,998,25,0,167,65,Clinical Intake - Addictions
+8A1A543,Male,50 - 54,88670467.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2016,9,2016-09-20,2016-09-20,4402,4402,0,0,755,78,Orthopedic
+8A1A543,Male,50 - 54,30083439.0,Outpatient,Ambulatory,Encounter Only,NA,NA,1,2014,6,2014-06-25,2014-06-25,891,891,0,0,922,78,Orthopedic
+8A1A543,Male,50 - 54,43273238.0,Outpatient,Day Care,Encounter Only,Surgery,Urology,1,2013,11,2013-11-21,2013-11-21,561,561,0,0,1448,93,Surgical - Procedure
+9A51A2,Female,30 - 34,33598889.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2012,5,2012-05-11,2012-08-26,429,536,107,1,1720,10,Addictions - Post Withdrawal Stabilization (secondary level)
+9A51A2,Female,30 - 34,19902049.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2013,8,2013-08-28,2016-02-23,898,1807,909,0,296,12,Addictions - Ambulatory (secondary level)
+9A51A2,Female,30 - 34,40058241.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2013,1,2013-01-10,2013-01-14,632,636,4,1,2116,13,Addictions - Detox (secondary level)
+9A51A2,Female,30 - 34,85256547.0,Emergency,Emergency,Encounter Only,NA,NA,1,2016,2,2016-02-09,2016-02-09,1896,1896,0,0,1429,28,ED - Med-Surg
+9A51A2,Female,30 - 34,34290077.0,Emergency,Emergency,Encounter Only,NA,NA,1,2011,4,2011-04-16,2011-04-16,0,0,0,0,2125,28,ED - Med-Surg
+9A51A2,Female,30 - 34,20811117.0,Emergency,Emergency,Encounter Only,NA,NA,1,2015,3,2015-03-03,2015-03-03,1407,1407,0,0,1429,28,ED - Med-Surg
+9A51A2,Female,30 - 34,91574104.0,Emergency,Emergency,Encounter Only,NA,NA,1,2017,3,2017-03-27,2017-03-27,2670,2670,0,0,1032,28,ED - Med-Surg
+9A51A2,Female,30 - 34,22285096.0,Other,Specimen,Encounter Only,Outpatient,Laboratory,1,2015,1,2015-01-14,2015-01-14,1385,1385,0,0,807,36,Lab - Island Health - General
+9A51A2,Female,30 - 34,34289143.0,Inpatient,Inpatient Acute,Encounter Only,Mental Health,Adult Psychiatry,1,2012,2,2012-02-21,2012-02-22,243,244,1,0,2119,41,"MHSU, Psychogeriatric - Acute Care"
+9A51A2,Female,30 - 34,41183554.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2013,1,2013-01-15,2013-03-25,691,760,69,0,167,65,Clinical Intake - Addictions
+7C1DB2,Male,45 - 49,22323452.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2015,8,2015-08-13,2015-08-13,1449,1449,0,1,1773,11,Addictions - Sobering & Assessment Centre (primary care)
+7C1DB2,Male,45 - 49,27356692.0,Recurring,Open Encounter,Encounter Only,Medicine,Medicine (Unspecified),1,2014,11,2014-11-13,2014-11-15,309,311,2,0,1723,17,Ambulatory Episodic - Treatment - Medical Day Care
+7C1DB2,Male,45 - 49,28762329.0,Emergency,Emergency,Encounter Only,NA,NA,1,2014,2,2014-02-21,2014-02-21,1045,1045,0,0,1429,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,42018847.0,Emergency,Emergency,Encounter Only,NA,NA,1,2013,8,2013-08-15,2013-08-15,3548,3548,0,0,1429,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,27505084.0,Emergency,Emergency,Encounter Only,NA,NA,1,2014,7,2014-07-12,2014-07-12,1115,1115,0,0,1429,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,NA,SI ED Basic Careset,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Bilirubin Total,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Carbon Dioxide Total,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Chloride Level,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,GGT,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Magnesium Level,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Potassium Level,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Protein Total,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Sodium Level,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,xxAutomated Diff,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,xxCoagulation Hold Tube,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,Radiology,Diagnostic Imaging,HH ECG Electrocardiogram,1,2016,6,2016-06-26,2016-06-27,2708,2709,1,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Albumin Level,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Alkaline Phosphatase,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,ALT,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Anion Gap,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Calcium Level,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Complete Blood Count and Differential,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Creatinine,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Glucose Random,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,87456582.0,Emergency,Emergency,General Lab,Laboratory,Troponin T High Sensitivity,1,2016,6,2016-06-26,2016-06-26,2708,2708,0,0,520,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,21391361.0,Emergency,Emergency,Encounter Only,NA,NA,1,2015,10,2015-10-07,2015-10-07,1615,1615,0,0,1429,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,42063635.0,Emergency,Emergency,Encounter Only,NA,NA,1,2012,9,2012-09-20,2012-09-20,474,474,0,0,1429,28,ED - Med-Surg
+7C1DB2,Male,45 - 49,21080102.0,Other,Specimen,Encounter Only,Outpatient,Laboratory,1,2015,2,2015-02-05,2015-02-05,1410,1410,0,0,807,36,Lab - Island Health - General
+2D98203,Female,35 - 39,27938824.0,Inpatient,Inpatient Acute,Encounter Only,Medicine,Medicine Family Practice,1,2014,1,2014-01-16,2014-01-19,899,902,3,0,935,5,Acute Care - Med-Surg
+2D98203,Female,35 - 39,85808290.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Drug Screen Urine Qualitative,1,2016,3,2016-03-13,2016-03-13,1328,1328,0,0,132,6,"Acute Care - Maternity, Perinatal"
+2D98203,Female,35 - 39,85808290.0,Inpatient,Inpatient Acute,General Lab,Laboratory,xxMicroscopic Urinalysis,1,2016,3,2016-03-13,2016-03-13,1328,1328,0,0,132,6,"Acute Care - Maternity, Perinatal"
+2D98203,Female,35 - 39,85808290.0,Inpatient,Inpatient Acute,General Lab,Laboratory,Macroscopic Urinalysis,1,2016,3,2016-03-13,2016-03-13,1328,1328,0,0,132,6,"Acute Care - Maternity, Perinatal"
+2D98203,Female,35 - 39,30923138.0,Inpatient,Inpatient Acute,Encounter Only,"Child, Youth & Family",Maternity,1,2012,1,2012-01-04,2012-01-06,231,233,2,0,1490,6,"Acute Care - Maternity, Perinatal"
+2D98203,Female,35 - 39,21515321.0,Inpatient,Inpatient Acute,Encounter Only,"Child, Youth & Family",Maternity,1,2015,2,2015-02-08,2015-02-11,1368,1371,3,0,1490,6,"Acute Care - Maternity, Perinatal"
+2D98203,Female,35 - 39,41019519.0,Inpatient,Inpatient Acute,Encounter Only,"Child, Youth & Family",Maternity,1,2013,2,2013-02-14,2013-02-19,493,498,5,0,1365,6,"Acute Care - Maternity, Perinatal"
+2D98203,Female,35 - 39,36546008.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2011,5,2011-05-26,2011-06-25,303,333,30,1,903,10,Addictions - Post Withdrawal Stabilization (secondary level)
+2D98203,Female,35 - 39,30333420.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2014,1,2014-01-30,2014-01-31,1038,1039,1,1,1554,11,Addictions - Sobering & Assessment Centre (primary care)
+2D98203,Female,35 - 39,52766112.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2010,7,2010-07-21,2011-04-18,0,271,271,0,1612,12,Addictions - Ambulatory (secondary level)
+2D98203,Female,35 - 39,22751968.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2015,7,2015-07-15,2015-07-22,1449,1456,7,1,2116,13,Addictions - Detox (secondary level)
+2D98203,Female,35 - 39,44098621.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2013,3,2013-03-17,2013-03-24,928,935,7,1,2116,13,Addictions - Detox (secondary level)
+2D98203,Female,35 - 39,26175573.0,Inpatient,MHAS - Acute Care,Encounter Only,Mental Health,Adult Psychiatry,1,2014,7,2014-07-05,2014-07-11,653,659,6,1,2116,13,Addictions - Detox (secondary level)
+2D98203,Female,35 - 39,87290407.0,Emergency,Emergency,Radiology,Diagnostic Imaging,XR Chest 2 Views,1,2016,6,2016-06-15,2016-06-17,1399,1401,2,0,520,28,ED - Med-Surg
+2D98203,Female,35 - 39,36798243.0,Emergency,Emergency,Encounter Only,NA,NA,1,2012,4,2012-04-26,2012-04-26,387,387,0,0,1429,28,ED - Med-Surg
+2D98203,Female,35 - 39,40362948.0,Emergency,Emergency,Encounter Only,NA,NA,1,2013,12,2013-12-11,2013-12-11,1198,1198,0,0,1429,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,NA,Chem 7 Hem Careset,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Chloride Level,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Creatinine,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,GGT,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Lactate Level,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Lipase Level,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,ALT,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Anion Gap,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Bilirubin Total,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Carbon Dioxide Total,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Complete Blood Count and Differential,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Glucose Random,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Potassium Level,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,Sodium Level,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,General Lab,Laboratory,xxAutomated Diff,1,2016,10,2016-10-27,2016-10-27,2024,2024,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,89300625.0,Emergency,Emergency,Radiology,Diagnostic Imaging,HH ECG Electrocardiogram,1,2016,10,2016-10-28,2016-10-28,2025,2025,0,0,1718,28,ED - Med-Surg
+2D98203,Female,35 - 39,38121092.0,Emergency,Emergency,Encounter Only,NA,NA,1,2013,1,2013-01-03,2013-01-03,65,65,0,0,2035,28,ED - Med-Surg
+2D98203,Female,35 - 39,36232656.0,Emergency,Emergency,Encounter Only,NA,NA,1,2011,9,2011-09-25,2011-09-25,88,88,0,0,1514,28,ED - Med-Surg
+2D98203,Female,35 - 39,41227893.0,Emergency,Emergency,Encounter Only,NA,NA,1,2013,8,2013-08-13,2013-08-13,777,777,0,0,1429,28,ED - Med-Surg
+2D98203,Female,35 - 39,39955884.0,Emergency,Emergency,Encounter Only,NA,NA,1,2011,11,2011-11-16,2011-11-16,230,230,0,0,1429,28,ED - Med-Surg
+2D98203,Female,35 - 39,39285534.0,Emergency,Emergency,Encounter Only,NA,NA,1,2013,2,2013-02-06,2013-02-06,601,601,0,0,2035,28,ED - Med-Surg
+2D98203,Female,35 - 39,34667311.0,Emergency,Emergency,Encounter Only,NA,NA,1,2012,6,2012-06-18,2012-06-18,418,418,0,0,1429,28,ED - Med-Surg
+2D98203,Female,35 - 39,42711950.0,Emergency,Emergency,Encounter Only,NA,NA,1,2013,10,2013-10-26,2013-10-26,867,867,0,0,1429,28,ED - Med-Surg
+2D98203,Female,35 - 39,27224295.0,Emergency,Emergency,Encounter Only,NA,NA,1,2014,8,2014-08-13,2014-08-13,1195,1195,0,0,2035,28,ED - Med-Surg
+2D98203,Female,35 - 39,21690463.0,Emergency,Emergency,Encounter Only,NA,NA,1,2015,1,2015-01-11,2015-01-11,1328,1328,0,0,1429,28,ED - Med-Surg
+2D98203,Female,35 - 39,35156450.0,Emergency,Emergency,Encounter Only,NA,NA,1,2012,2,2012-02-26,2012-02-26,328,328,0,0,1429,28,ED - Med-Surg
+2D98203,Female,35 - 39,35488213.0,Emergency,Emergency,Encounter Only,NA,NA,1,2012,8,2012-08-22,2012-08-22,586,586,0,0,1429,28,ED - Med-Surg
+2D98203,Female,35 - 39,87787211.0,Outpatient,Ambulatory,General Lab,Laboratory,xxMicroscopic Urinalysis,1,2016,7,2016-07-18,2016-07-18,1853,1853,0,0,2190,36,Lab - Island Health - General
+2D98203,Female,35 - 39,87787211.0,Outpatient,Ambulatory,General Lab,Laboratory,Macroscopic Urinalysis,1,2016,7,2016-07-18,2016-07-18,1853,1853,0,0,2190,36,Lab - Island Health - General
+2D98203,Female,35 - 39,87787211.0,Outpatient,Ambulatory,Micro,Laboratory,Urine Culture,1,2016,7,2016-07-18,2016-07-20,1853,1855,2,0,2190,36,Lab - Island Health - General
+2D98203,Female,35 - 39,32491414.0,Other,Specimen,Encounter Only,Outpatient,Laboratory,1,2012,5,2012-05-08,2012-05-08,285,285,0,0,807,36,Lab - Island Health - General
+2D98203,Female,35 - 39,29052699.0,Other,Specimen,Encounter Only,Outpatient,Laboratory,1,2014,3,2014-03-20,2014-03-20,1074,1074,0,0,766,36,Lab - Island Health - General
+2D98203,Female,35 - 39,84445581.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2016,1,2016-01-21,2016-01-21,1680,1680,0,0,243,38,Medical Imaging
+2D98203,Female,35 - 39,85234680.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Medical Imaging,1,2016,2,2016-02-07,2016-02-07,1665,1665,0,0,671,38,Medical Imaging
+2D98203,Female,35 - 39,85325766.0,Other,Specimen,Encounter Only,Outpatient,Outpatient,1,2016,2,2016-02-11,2016-02-11,1341,1341,0,0,227,40,"Med - Surg, Ambulatory"
+2D98203,Female,35 - 39,19742002.0,Recurring,Open Encounter,Encounter Only,Outpatient,Pre-Admission Clinic,1,2007,10,2007-10-30,2017-05-12,0,3482,3482,0,275,40,"Med - Surg, Ambulatory"
+2D98203,Female,35 - 39,32426953.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Outpatient,1,2011,4,2011-04-08,2011-04-08,0,0,0,0,227,40,"Med - Surg, Ambulatory"
+2D98203,Female,35 - 39,36377395.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Outpatient,1,2011,5,2011-05-26,2011-05-26,41,41,0,0,947,40,"Med - Surg, Ambulatory"
+2D98203,Female,35 - 39,32215696.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Outpatient,1,2012,5,2012-05-07,2012-05-07,577,577,0,0,227,40,"Med - Surg, Ambulatory"
+2D98203,Female,35 - 39,29224331.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Outpatient,1,2014,5,2014-05-21,2014-05-21,1394,1394,0,0,227,40,"Med - Surg, Ambulatory"
+2D98203,Female,35 - 39,41160574.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Outpatient,1,2012,11,2012-11-14,2012-11-14,382,382,0,0,227,40,"Med - Surg, Ambulatory"
+2D98203,Female,35 - 39,21251468.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Outpatient,1,2015,10,2015-10-07,2015-10-07,1513,1513,0,0,227,40,"Med - Surg, Ambulatory"
+2D98203,Female,35 - 39,36791419.0,Outpatient,Ambulatory,Encounter Only,Outpatient,Outpatient,1,2012,7,2012-07-26,2012-07-26,302,302,0,0,227,40,"Med - Surg, Ambulatory"
+2D98203,Female,35 - 39,25631963.0,Outpatient,Ambulatory,Encounter Only,Mental Health,Adult Psychiatry,1,2014,6,2014-06-02,2014-06-02,1208,1208,0,0,844,46,"Crisis Response Teams - One-time, High-intensity - Emergency Response"
+2D98203,Female,35 - 39,86727795.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2016,4,2016-04-26,2016-05-03,1422,1429,7,0,2011,61,Residential Care - MHSU - Crisis Residential (secondary level)
+2D98203,Female,35 - 39,36818812.0,Inpatient,MHAS - Residential,Encounter Only,Mental Health,Adult Psychiatry,1,2011,6,2011-06-27,2011-07-18,321,342,21,0,390,61,Residential Care - MHSU - Crisis Residential (secondary level)
+2D98203,Female,35 - 39,20827984.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2015,10,2015-10-05,2015-10-27,574,596,22,0,1601,64,Clinical Intake - Adult MHSU
+2D98203,Female,35 - 39,33284279.0,Recurring,Open Encounter,Encounter Only,Mental Health,Adult Psychiatry,1,2012,8,2012-08-13,2012-09-19,0,37,37,0,1408,65,Clinical Intake - Addictions
+2D98203,Female,35 - 39,86008853.0,Outpatient,Ambulatory,Encounter Only,Surgery,Surgery,1,2016,4,2016-04-06,2016-04-06,1399,1399,0,0,1033,93,Surgical - Procedure
