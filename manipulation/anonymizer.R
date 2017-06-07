@@ -86,11 +86,8 @@ scramble_many <- function(ds, sample_size){
 
 d <- ds %>% scramble_many(20)
 
-readr::write_csv(d,"./data-unshared/derived/temp-out.csv")
-d <- readr::read_csv("./data-unshared/derived/temp-out.csv")
-
-
-
+saveRDS(d, paste0(path_save,".rds"))
+readr::write_csv(d, paste0(path_save,".csv"))
 
 
 
