@@ -33,24 +33,81 @@ testit::assert("File does not exist", base::file.exists(path_input))
 # ---- load-data ---------------------------------------------------------------
 ds <- readRDS(path_input)
 # ---- inspect-data --------------------
-ds %>% dplyr::glimpse()
+ds %>% dplyr::glimpse(70)
 # ---- tweak-data ---------------------
 # ---- anonymize ------------------
-x <- ds %>% 
-  dplyr::select(id, gender, age_group, encounter_id, palette_colour_name)
-d_patients <- ds %>% 
-  dplyr::group_by(id, palette_code, palette_colour_name) %>%
-  # dplyr::group_by(id ) %>% 
-  dplyr::summarize(
-    n_encounters = length(unique(encounter_id)),
-    n_events     = sum(event_count) 
-  )
-x <- d_patients
+scramble_one <- function(ds, person_id){
+  # person_id = 906466
+  ls_bucket <- list()
+  all_palette_codes <- setdiff(unique(ds$palette_code), NA)
+  for(pc in all_palette_codes ){
+    ls_bucket[[pc]] <- ds %>% 
+      dplyr::filter(palette_code == pc)
+  }
+  
+  d_roster <- ds %>% 
+    dplyr::group_by(id, palette_code) %>%
+    # dplyr::group_by(id ) %>% 
+    dplyr::summarize(
+      n_encounters = length(unique(encounter_id))
+    )
+  ###
+  ls_person <- list()
+  dd <- d_roster %>% dplyr::filter(id == person_id) %>% as.data.frame() 
+  person_codes <- dd[,"palette_code"]
+  person_draws <- dd[,"n_encounters"]
+  for(p in seq_along(person_codes)){
+    # p = 1
+    # encounters_in_this_code <- ls_bucket[[person_codes[p]]]# %>% dplyr::distinct(encounter_id)# %>% as.data.frame()
+    encounters_in_this_code <- ls_bucket[[person_codes[p]]] %>% as.data.frame()
+    encounters_in_this_code <- unique(encounters_in_this_code[,"encounter_id"])
+    # encounters_in_this_code <- encounters_in_this_code[,"encounter_id"]
+    select_encounters <- sample(encounters_in_this_code, person_draws[p], replace = FALSE)  
+    
+    ls_person[[person_codes[p]]] <- ls_bucket[[person_codes[p]]] %>% 
+      dplyr::filter(encounter_id %in% select_encounters)
+    d_person <- dplyr::bind_rows(ls_person)
+  }
+  return(d_person)
+}
+# Usage :
+# d <- ds %>% scramble_one(906466)
 
-patient_pallete_codes %>% unique(d_patients[,"pa"])
-select_palette_code <- 
-filter_criteria_palette <- lazyeval::interp(~ which_column %in% select_palette_code,which_column = as.name("palette_code"))
-d <- ds %>% 
-  # create a bucket
-  dplyr::filter_(.dots = filter_criteria_palette )
-x <- d 
+scramble_many <- function(ds, sample_size){
+  # sample_size = 10
+  ls_temp <- list()
+  select_persons <- sample(unique(ds$id), sample_size, replace = FALSE)
+  for(i in select_persons ){
+    ls_temp[[i]] <- scramble_one(ds, i)
+  }
+  d <- ls_temp %>% dplyr::bind_rows()
+  return(d)
+}  
+
+d <- ds %>% scramble_many(20)
+
+readr::write_csv(d,"./data-unshared/derived/temp-out.csv")
+d <- readr::read_csv("./data-unshared/derived/temp-out.csv")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
