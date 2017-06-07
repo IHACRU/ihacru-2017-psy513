@@ -37,7 +37,7 @@ ds %>% dplyr::glimpse(70)
 # ---- tweak-data ---------------------
 # ---- anonymize ------------------
 scramble_one <- function(ds, person_id){
-  # person_id = 906466
+  # person_id = 10042753
   ls_bucket <- list()
   all_palette_codes <- setdiff(unique(ds$palette_code), NA)
   for(pc in all_palette_codes ){
@@ -57,8 +57,8 @@ scramble_one <- function(ds, person_id){
   dd <- d_roster %>% dplyr::filter(id == person_id) %>% as.data.frame() 
   person_codes <- dd[,"palette_code"]
   person_draws <- dd[,"n_encounters"]
-  person_gernder <- unique(dd[,"gender"])
-  person_age_group <- unique(dd[,"age_group"])
+  person_gernder <- unique(dd[,"gender"])[1]
+  person_age_group <- unique(dd[,"age_group"])[1]
   for(p in seq_along(person_codes)){
     # p = 1
     # encounters_in_this_code <- ls_bucket[[person_codes[p]]]# %>% dplyr::distinct(encounter_id)# %>% as.data.frame()
@@ -79,7 +79,7 @@ scramble_one <- function(ds, person_id){
   return(d_person)
 }
 # Usage :
-# d <- ds %>% scramble_one(906466)
+d <- ds %>% scramble_one(10042753)
 
 scramble_many <- function(ds, sample_size){
   # sample_size = 10
@@ -92,9 +92,9 @@ scramble_many <- function(ds, sample_size){
   return(d)
 }  
 
-set.seed(3)
+set.seed(1)
 d <- ds %>% scramble_many(10)
-d <- d %>% 
+# d <- d %>% 
   dplyr::mutate(
     encounter_id = encounter_id + round(runif(1,1,10000),0)
   )
