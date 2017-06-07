@@ -77,7 +77,7 @@ We discuss how EHR is queried to obtain the list of clinical events which consti
 - know what kind of variables are supplied with in a standard patient event tabele
 
 # Table of Contents
-- [GE1](#GE1) – Location Mapping: EHR Addresses and Class Compressors  
+- [GE1](#ge1) – Location Mapping: EHR Addresses and Class Compressors  
 - GE2 – Patient Event Table: Sequencing encounters with the Service System
 - GE3 – Mapped Encounters: Cohort Summary and Timeline Visualization  
 - _Lab1 – Cohort Summary and Timeline Visualization_  
