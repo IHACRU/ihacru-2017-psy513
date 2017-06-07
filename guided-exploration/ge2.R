@@ -19,14 +19,15 @@ requireNamespace("RColorBrewer", quietly=TRUE) # colors in graphs
 requireNamespace("DT", quietly=TRUE) # for dynamic tables
 
 # ---- declare-globals ---------------------------------------------------------
-path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
-path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
+path_input_events   <- "./data-public/derived/dto_patient_events_addictions_4264_anon.rds"
+path_save   <- "./data-public/derived/dto_patient_events_addictions_4264"
 testit::assert("File does not exist", base::file.exists(path_input_events))
 
 # ---- utility-functions -------------------------------------------------------
 # functions local to this script go here. 
 # ---- load-data ---------------------------------------------------------------
-ds_patient_events <- readr::read_csv(path_input_events)
+ds_patient_events <- readRDS(path_input_events)
+
 # ---- inspect-data -----------------------------------------------------------
 ds_patient_events %>% dplyr::glimpse()
 # ---- tweak-data -------------------------------------------------------------
@@ -43,12 +44,6 @@ ds_patient_events <- ds_patient_events %>%
 ds_patient_events %>% dplyr::glimpse()
 
 ds_patient_events <- ds_patient_events %>% 
-  dplyr::rename( # these renames are to help our evolving naming convention
-    id = cohort_patient_id # id for person in this cohort study
-    # age = age_group
-    ,encounter_id =  encounter_fact_key
-    ,location_map_id = location_mapping_id
-  ) %>% 
   dplyr::mutate(
     palette_code        = ifelse(palette_code==0,NA,palette_code)
     # , palette_colour_name_42 = substr(palette_colour_name,1,42) # shorter name for display
