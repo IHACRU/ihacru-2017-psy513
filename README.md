@@ -6,6 +6,7 @@ A graduate course (**PSYC 513 - Statistical Methods**) taught at the University 
 This course will focus on types and sources of administrative health data and on the permissions, acquisition, management, and statistical analysis of administrative health and linked longitudinal encounter data. Analyses will cover a range of methods, including descriptive statistics, longitudinal trajectories, visualization of encounter timelines, multilevel modeling of within-person change, growth mixture models, and predictive models to quantify risk of future health events. This course will lead to an ongoing collaborative interdisciplinary research group, including data, policy, and statistical analysis experts. Simulated data from Island Health will be used for purposes of this course (signed non-disclosure agreement required for access to information and analysis tools).
 
 # Resources
+- [Course Syllabus](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/PSYC_513_Course%20Outline_170605.pdf)
 - [Lecture slides](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/lecture-slides-ihacru-2017-psyc513.pdf)
 - Book: [Secondary Analysis of Electronic Health Records](http://www.springer.com/gp/book/9783319437408) (open access)
 - This repository: https://github.com/IHACRU/ihacru-2017-psy513    
