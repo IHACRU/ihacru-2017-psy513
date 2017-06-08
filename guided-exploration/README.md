@@ -77,6 +77,28 @@ We discuss how EHR is queried to obtain the list of clinical events which consti
 - be able to explaine how unique ehr addresses become palette colours 
 - know what kind of variables are supplied with in a standard patient event tabele
 
+
+
+# GE3
+## Mapped Encounters: Cohort Summary and Timeline Visualization  
+### Overview. 
+We connect patient histories to the semantic layer describing the properties of service programs.
+
+### Script
+[`./manipulation/ge3.R`](ge3.R)
+### Questions
+- 3.1 How can patients’ histories be visualized? What are the ways to look at them?
+- 3.2 High-contrast, low-frequency vs low-contrast, high-frequency events. What is significance of each?
+- 3.3. How does encounter relate to other units of analysis: events and episodes?
+
+### Skills
+- scatter plots with ggplot2
+- joining dataframes using `dplyr` joins
+
+### Learning Objectives
+- understand the `dplyr` idioms in the custom function `unique_sums`
+- produce a basic graph of medical history of a single patient
+
 # Table of Contents
 - [GE1](#ge1) – Location Mapping: EHR Addresses and Class Compressors  
 - [GE2](#ge2) – Patient Event Table: Sequencing encounters with the Service System
