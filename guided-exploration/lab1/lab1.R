@@ -103,8 +103,8 @@ options(
 ds_patient_events <- readRDS(path_input_patient_events) # %>% as.data.frame()
 ds_location_map   <- readRDS(path_input_location_map)
 
-ds_patient_events  %>% glimpse()
-ds_location_map %>% glimpse()
+ds_patient_events  %>% glimpse(50)
+ds_location_map %>% glimpse(50)
 
 # ---- tweak-data ------------------------------------------------------------
 # augment the event table with additional columns from location map
@@ -113,8 +113,12 @@ ds <- dplyr::left_join(
   ds_location_map %>%         # location map 
     dplyr::select_(.dots = components_location_map)
   ,by = c("location_map_id","palette_code","palette_colour_name") 
-) %>% 
+) %>%
+  dplyr::rename(
+    id = cohort_patient_id
+  ) %>% 
   dplyr::mutate(
+    
     location_class_description_display    = substr(location_class_description,1,42)
     ,palette_colour_name_display = substr(palette_colour_name,1,42)
   )
@@ -126,9 +130,24 @@ ds %>% glimpse()
 
 
 # ---- inspect-data-1 -----------------------------------------------------------
-ds_patient_events  %>% glimpse()
-ds_location_map %>% glimpse()
-ds %>% glimpse()
+ds_patient_events  %>% glimpse(70)
+ds_location_map %>% glimpse(70)
+ds %>% glimpse(50)
+
+# ---- inspect-data-2 -----------------------------------------------------------
+varnames <- c(cerner_address_keys, data_warehouse_address, compressor_names, program_classes, palette_colours)
+setdiff(colnames(ds_location_map), varnames)
+ds_location_map %>% 
+  dplyr::distinct_(.dots = varnames  ) %>% 
+  DT::datatable( 
+    class   = 'cell-border stripe',
+    caption = "Number of encounteres in each service TYPE",
+    filter  = "top", 
+    options = list(
+      pageLength = 10, 
+      autoWidth  = TRUE
+      )
+  )
 rm(ds_patient_events, ds_location_map)
 
 # ---- utility-functions -------------------------------------------------------
