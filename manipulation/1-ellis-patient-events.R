@@ -12,82 +12,45 @@ source("./scripts/graphing/graph-presets.R") # font and color conventions
 # ---- load-packages -----------------------------------------------------------
 library(ggplot2) #For graphing
 library(magrittr) #Pipes
-requireNamespace("readxl")
-
 requireNamespace("knitr", quietly=TRUE)
 requireNamespace("scales", quietly=TRUE) #For formating values in graphs
 requireNamespace("RColorBrewer", quietly=TRUE)
 requireNamespace("dplyr", quietly=TRUE)
 requireNamespace("DT", quietly=TRUE) # for dynamic tables
-# requireNamespace("plyr", quietly=TRUE)
-# requireNamespace("reshape2", quietly=TRUE) #For converting wide to long
-# requireNamespace("mgcv, quietly=TRUE) #For the Generalized Additive Model that smooths the longitudinal graphs.
 
 # ---- declare-globals ---------------------------------------------------------
-# path_input_mapping  <- "./data-unshared/derived/dto_location_map.rds" # `./0-ellis-location-map.R`
-path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
-# path_input_events   <- "./data-unshared/raw/temp_out.csv"
+path_input_events   <- "./data-public/derived/dto_patient_events_addictions_4264_anon.rds"
 path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
-
-
-
-# testit::assert("File does not exist", base::file.exists(path_input_mapping))
 testit::assert("File does not exist", base::file.exists(path_input_events))
-# testit::assert("File does not exist", base::file.exists(path_input_service_types))
 
 # ---- utility-functions ----------------------------------------------------- 
-
-
+# place for functions local to this script
 # ---- load-data ---------------------------------------------------------------
-# ds_location_map     <- readRDS(path_input_mapping) %>% as.data.frame()
-ds_patient_events <- readr::read_csv(path_input_events)#  %>% as.data.frame()
-
+ds_patient_events     <- readRDS(path_input_events) %>% as.data.frame()
+# ds_patient_events <- readr::read_csv(path_input_events)#  %>% as.data.frame()
 # reproduction in SRE causes the name of the first variable to have a prefex <U+FEFF>
 names(ds_patient_events)[1] <- "cohort_patient_id" # correct for UTF-8-BOM
+
 # ---- inspect-data -----------------------------------------------------------
 ds_patient_events %>% dplyr::glimpse()
+
 # ---- tweak-data -------------------------------------------------------------
 # standardize names : remove capital letters
 colnames(ds_patient_events) <- tolower(colnames(ds_patient_events))
 ds_patient_events %>% dplyr::glimpse()
-
-
 # Some variables have different character codes for missing values
 # Translate various character values into NA values
 ds_patient_events <- ds_patient_events %>% 
   # apply function defined in `./manipulation/function-support.R`
   dplyr::mutate_all(dplyr::funs(replace_with_na) ) 
-
-
+# inspect the effect of the previous function
 ds_patient_events %>% dplyr::glimpse()
-# d %>% dplyr::glimpse()
 ds_patient_events <- ds_patient_events %>% 
-  dplyr::rename(
-    id = cohort_patient_id # id for person in this cohort study
-    # age = age_group
-    ,encounter_id =  encounter_fact_key
-    ,location_map_id = location_mapping_id
-  ) %>% 
-  dplyr::mutate(
-    palette_code        = ifelse(palette_code==0,NA,palette_code)
-    # , palette_colour_name = ifelse(palette_colour_name=="{blank}",NA,palette_colour_name)
-    # , palette_colour_name_42 = substr(palette_colour_name,1,42)
-    # , event_start_date = as.Date(event_start_date)
-    # , event_end_date = as.Date(event_end_date)
-  ) %>% 
-  # dplyr::group_by(id) %>% 
-  # dplyr::mutate(
-  #   n_encounter = length(id)
-  #   # n_fact_key = length(unique(encounter_fact_key)),
-  #   # n_addiction_location = sum(addiction_location_count)
-  # ) %>% 
-  # dplyr::ungroup() %>% 
   dplyr::select(
      id                       # unique person identifier
     ,gender                   # biological sex
     ,age_group                # in groups of 5 years
     # encounter history
-    # ,encounter_fact_key       # unique identifier for the encounter 
     ,encounter_id               # unique identifier for the encounter 
     ,encounter_class          # value from the D_Location dimension table in the data warehous
     ,encounter_type           # value from the D_Location dimension table in the data warehous
@@ -117,14 +80,7 @@ ds_patient_events <- ds_patient_events %>%
     # see https://github.com/IHACRU/ihacru-encounter-timeline/issues/1
     # unique encounter has a unique encounter_fact_key
     # there may be multiple rows representing a single encounter
-  ) #%>% 
-  # dplyr::group_by(id) %>% 
-  # dplyr::mutate(
-  #   n_encounters = length(unique(encounter_fact_key)), # number of unique encounter keys
-  #   n_events     = sum(event_count)                    # number of distinct medical events 
-  # ) %>%   
-  # dplyr::ungroup() 
-
+  ) 
 # Use dynamic tables to interact if needed
 # d <- ds_location_map %>% group_by_(.dots=compressor_names) %>% count() %>% print(n=nrow(.))
 # d %>% DT::datatable()
@@ -132,7 +88,6 @@ ds_patient_events <- ds_patient_events %>%
 # ---- save-to-disk ----------------
 saveRDS(ds_patient_events, paste0(path_save,".rds"))
 # readr::write_csv(ds_location_map, paste0(path_save,".csv"))
-
 
 # ---- explore-data ----------------
 # PET - Patient Event Table
