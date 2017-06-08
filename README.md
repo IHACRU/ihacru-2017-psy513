@@ -15,6 +15,9 @@ This course will focus on types and sources of administrative health data and on
 - [Guided Explorations](guided-exploration/README.md)
 - [Research Review Template](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/research-reviews-working-template-v2.docx)
 
+# Reports 
+- [Location Map](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/reports/location_map/location_map.html)
+- [Addictions-Sobering-4264](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/sandbox/addictions_sobering/addictions-4264-summative.html) cohort: summative analysis
 
 # Schedule
 ![image](https://cloud.githubusercontent.com/assets/2608073/26729360/6a4bf0ee-477b-11e7-8673-d5c9c5366623.png)
