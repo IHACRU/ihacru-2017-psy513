@@ -163,8 +163,11 @@ replace_with_na <- function(x){
 
 # function to get a sample of ids from an intensity ranges
 # measured as the segment of percintile rank of number of available records 
-get_ids <- function(d, bottom=.5, top=.6, n_people=1){
+get_ids <- function(d, bottom=.1, top=.9, n_people=1){
   # d <- ds
+  # bottom=.1
+  # top=.9
+  # n_people=1
   ids <- d %>% 
     # dplyr::arrange(desc(n_encounter)) %>% 
     # dplyr::distinct(id) %>% 
@@ -178,8 +181,9 @@ get_ids <- function(d, bottom=.5, top=.6, n_people=1){
     dplyr::filter(pct_rank > bottom & pct_rank < top) %>% 
     dplyr::select(id) %>% 
     as.data.frame() 
-  sample_size <- ifelse(nrow(ids) <= n_people, nrow(ids),n_people)
-  ids <- sample(ids$id,size = sample_size, replace=F ) %>% as.numeric()
+  nrow(ids)
+  sample_size <- ifelse( nrow(ids) <= n_people, nrow(ids),n_people)
+  ids <- sample(ids$id,size = sample_size, replace=F ) #%>% as.numeric()
   return(ids)
 }
 
