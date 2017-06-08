@@ -13,6 +13,7 @@ This course will focus on types and sources of administrative health data and on
 - [Papers](libs/materials/research-papers.md) related to the use of electronic health records in clinical and academic research. (Please contribute!)
 - R programming [cheat sheets](https://www.rstudio.com/resources/cheatsheets/)
 - [Guided Explorations](guided-exploration/README.md)
+- [Research Review Template](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/research-reviews-working-template-v2.docx)
 
 
 # Schedule
