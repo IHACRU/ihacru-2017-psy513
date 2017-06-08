@@ -165,14 +165,15 @@ ds_location_map %>%
     location_class_code = as.character(location_class_code),
     palette_code = as.character(palette_code) 
   ) %>% 
-  dplyr::select(site_key, facility_key, building_key, unit_key, 
-    location_category, location_grouping, location_type, unit_name, 
-    n_address,
+  dplyr::select(
+    palette_code, palette_colour_name,
+    location_class_code, location_class_description,
+    n_class, 
     intensity_type,intensity_severity_risk,clinical_focus,service_type,
     service_location,population_age, provider_mix, 
-    n_class, 
-    location_class_code, location_class_description,
-    palette_code, palette_colour_name
+    n_address,
+    unit_name, location_category, location_grouping, location_type,  
+    unit_key, building_key, facility_key
   ) %>% 
   DT::datatable( 
     class   = 'cell-border stripe',
@@ -183,3 +184,4 @@ ds_location_map %>%
       autoWidth  = TRUE
     )
   )
+
