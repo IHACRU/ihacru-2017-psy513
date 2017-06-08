@@ -37,8 +37,8 @@ Basic familiarity with R is recommended. While we do not exclude other statistic
 Students are encouraged to take an active part in the direction and content of the course by preparing for and contributing to class discussions of assigned readings, sharing with others their (direct or indirect) research experience, challenges and successes. The level and relevance of contribution to the course will be a prominent factor in final grading. 
 
 ### Research Project (80%): 	 
-- 1.	Analysis of Encounter Data and Summary of Results (30%): Statistical analysis will focus on simulated longitudinal encounter data from Island Health.	 Data and initial scripts for statistical analysis and plotting will be provided. Learners will be required to submit two reports which they will produce using software and scripts demonstrated in class. Course materials related to these reports are located at https://github.com/IHACRU/ihacru-2017-psy513.     
-- 2.	Research Proposal (30%): A proposal (7-10 pages) will be developed that will be sufficient for a data request and ethics application. Details will be given in class.
+- 1.	 Analysis of Encounter Data: Research Reports 1 and 2  (30%):: Statistical analysis will focus on simulated longitudinal encounter data from Island Health.  Data and initial scripts for statistical analysis and plotting will be provided. Learners will be required to submit two reports which they will produce using software and scripts demonstrated in class. Course materials related to these reports are located at https://github.com/IHACRU/ihacru-2017-psy513.        
+- 2.	Research Proposal (30%): A proposal (7-10 pages) will be developed that will be sufficient for a data request and ethics application. Details will be given in class. 
 - 3.	A 10 minute presentation (20%): Students are asked to present their research proposal to the class at the end of the term. 
 
 
