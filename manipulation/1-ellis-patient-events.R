@@ -21,25 +21,25 @@ requireNamespace("DT", quietly=TRUE) # for dynamic tables
 # ---- declare-globals ---------------------------------------------------------
 # select the cohort, for which you wish to prepare the patient event table
 # Fictional cohort used for testing and development of scripts
-path_input_events   <- "./data-public/derived/dto_patient_events_addictions_4264_anon.csv"
-path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
-# Addictions and Soberting 
-path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
-path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
+# path_input_events   <- "./data-public/derived/dto_patient_events_addictions_4264_anon.csv"
+# path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
+# # Addictions and Soberting 
+# path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
+# path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
 # Mental Health Diagnosis
 path_input_events   <- "./data-unshared/raw/Patient_Events-30662_MH_Diagnosis_2017-05-23.csv"
 path_save           <- "./data-unshared/derived/dto_patient_events_mh_30662"
-# Full 3T Cohort
-path_input_events   <- "./data-public/raw/Patient_Events-170565_3T_Research_Full_2017-05-23.csv"
-path_save           <- "./data-unshared/derived/dto_patient_events_full3t_170656"
+# # Full 3T Cohort
+# path_input_events   <- "./data-public/raw/Patient_Events-170565_3T_Research_Full_2017-05-23.csv"
+# path_save           <- "./data-unshared/derived/dto_patient_events_full3t_170656"
 
 testit::assert("File does not exist", base::file.exists(path_input_events))
 
 # ---- utility-functions ----------------------------------------------------- 
 # place for functions local to this script
 # ---- load-data ---------------------------------------------------------------
-ds_patient_events     <- readRDS(path_input_events) %>% as.data.frame()
-# ds_patient_events <- readr::read_csv(path_input_events)#  %>% as.data.frame()
+# ds_patient_events     <- readRDS(path_input_events) %>% as.data.frame()
+ds_patient_events <- readr::read_csv(path_input_events)#  %>% as.data.frame()
 # reproduction in SRE causes the name of the first variable to have a prefex <U+FEFF>
 names(ds_patient_events)[1] <- "cohort_patient_id" # correct for UTF-8-BOM
 
