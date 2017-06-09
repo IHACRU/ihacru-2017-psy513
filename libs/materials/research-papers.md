@@ -1,4 +1,4 @@
-# Research Papers on use of EHR
+# Research Papers on the use of EHR
 
 The following is the list of articles related to the use of electronic health records in clinical and/or academic research.
 
