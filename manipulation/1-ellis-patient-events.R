@@ -19,8 +19,20 @@ requireNamespace("dplyr", quietly=TRUE)
 requireNamespace("DT", quietly=TRUE) # for dynamic tables
 
 # ---- declare-globals ---------------------------------------------------------
-path_input_events   <- "./data-public/derived/dto_patient_events_addictions_4264_anon.rds"
+# select the cohort, for which you wish to prepare the patient event table
+# Fictional cohort used for testing and development of scripts
+path_input_events   <- "./data-public/derived/dto_patient_events_addictions_4264_anon.csv"
 path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
+# Addictions and Soberting 
+path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
+path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
+# Mental Health Diagnosis
+path_input_events   <- "./data-unshared/raw/Patient_Events-30662_MH_Diagnosis_2017-05-23.csv"
+path_save           <- "./data-unshared/derived/dto_patient_events_mh_30662"
+# Full 3T Cohort
+path_input_events   <- "./data-public/raw/Patient_Events-170565_3T_Research_Full_2017-05-23.csv"
+path_save           <- "./data-unshared/derived/dto_patient_events_full3t_170656"
+
 testit::assert("File does not exist", base::file.exists(path_input_events))
 
 # ---- utility-functions ----------------------------------------------------- 
@@ -46,6 +58,9 @@ ds_patient_events <- ds_patient_events %>%
 # inspect the effect of the previous function
 ds_patient_events %>% dplyr::glimpse()
 ds_patient_events <- ds_patient_events %>% 
+  dplyr::rename( # may need to rename a few variables to conform to convention
+    id = cohort_patient_id    # id for person in this cohort study
+  ) %>% 
   dplyr::select(
      id                       # unique person identifier
     ,gender                   # biological sex
@@ -86,6 +101,7 @@ ds_patient_events <- ds_patient_events %>%
 # d %>% DT::datatable()
 
 # ---- save-to-disk ----------------
+# save the cleaned and formatted patient event table to be used in reports
 saveRDS(ds_patient_events, paste0(path_save,".rds"))
 # readr::write_csv(ds_location_map, paste0(path_save,".csv"))
 
