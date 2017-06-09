@@ -27,11 +27,11 @@ requireNamespace("DT", quietly=TRUE) # for dynamic tables
 # path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
 # path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
 # Mental Health Diagnosis
-path_input_events   <- "./data-unshared/raw/Patient_Events-30662_MH_Diagnosis_2017-05-23.csv"
-path_save           <- "./data-unshared/derived/dto_patient_events_mh_30662"
+# path_input_events   <- "./data-unshared/raw/Patient_Events-30662_MH_Diagnosis_2017-05-23.csv"
+# path_save           <- "./data-unshared/derived/dto_patient_events_mh_30662"
 # # Full 3T Cohort
-# path_input_events   <- "./data-public/raw/Patient_Events-170565_3T_Research_Full_2017-05-23.csv"
-# path_save           <- "./data-unshared/derived/dto_patient_events_full3t_170656"
+path_input_events   <- "./data-unshared/raw/Patient_Events-170565_3T_Research_Full_2017-05-23.csv"
+path_save           <- "./data-unshared/derived/dto_patient_events_full3t_170656"
 
 testit::assert("File does not exist", base::file.exists(path_input_events))
 
