@@ -9,4 +9,4 @@ The following is the list of articles related to the use of electronic health re
 
 [Baker-et-al-2016]: http://www.alzheimersanddementia.com/article/S1552-5260(16)32508-0/pdf
 [Souri-et-al-2017]: https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-017-0431-9
-[Penning-et-at-2016]: https://academic.oup.com/psychsocgerontology/article-abstract/doi/10.1093/geronb/gbw104/2631927/Long-term-Care-Trajectories-in-Canadian-Contex
+[Penning-et-al-2016]: https://doi.org/10.1093/geronb/gbw104
