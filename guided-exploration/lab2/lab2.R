@@ -32,6 +32,7 @@ source("./manipulation/object-glossary.R")   # object definitions
 source("./scripts/common-functions.R")        # reporting functions and quick views
 source("./scripts/graphing/graph-presets.R") # font and color conventions
 # ---- declare-globals ---------------------------------------------------------
+path_input <- "./data-unshared/derived/dto_addictions_4264.rds"
 # define output format for the report
 options(
   knitr.table.format = "html"
@@ -41,8 +42,64 @@ options(
 # ---- utility-functions -------------------------------------------------------
 # functions local to this script go here. 
 # ---- load-data ---------------------------------------------------------------
+ds <- readRDS(path_input)
 # ---- inspect-data -----------------------------------------------------------
+ds %>% dplyr::glimpse(70)
 # ---- tweak-data ------------------------------------------------------------
+
+ds %>% 
+  dplyr::group_by(id) %>% 
+  dplyr::mutate(
+    n = length(unique(encounter_id))
+  ) %>% 
+  dplyr::arrange(desc(n)) %>% 
+  dplyr::select(id, n)
+
+# flatten the timeline of one individual
+flatten_one <- function(df, person_id, pivot){
+  # Temp values for testing and development
+  # df        <- ds 
+  # # person_id = 907750 #906466
+  # person_id = 906466
+  # # person_id = 908009
+  # # person_id = sample(unique(ds$id),1)
+  # pivot     = "palette_code"
+  
+  d1 <- df %>% 
+    dplyr::filter(id == person_id) %>% 
+    dplyr::select(id,encounter_id,encounter_class, encounter_type, event_type,event_count, palette_code,
+                  # ,palette_colour_name_display
+                  duration_days) %>% 
+    dplyr::group_by_(.dots = c("id",pivot)) %>% 
+    dplyr::summarize(
+      n_encounters = length(unique(encounter_id)),
+      n_events     = sum(event_count),
+      n_days       = sum(duration_days)
+    ) 
+  d_encounters <- d1 %>% dplyr::select(id, palette_code, n_encounters)%>% tidyr::spread(key = palette_code, value = n_encounters)
+  d_events     <- d1 %>% dplyr::select(id, palette_code, n_events)%>% tidyr::spread(key = palette_code, value = n_events)
+  d_days       <- d1 %>% dplyr::select(id, palette_code, n_days) %>% tidyr::spread(key = palette_code, value = n_days)
+
+  ls_temp <- list(
+    "encounters" = d_encounters,
+    "events"     = d_events,
+    "days"       = d_days   
+  )
+  d2 <- ls_temp %>% dplyr::bind_rows(.id = "metric") %>% dplyr::select(id, metric, dplyr::everything())
+  return(d2)
+}
+# Usage:
+d <- ds %>% flatten_one(person_id = 906466, pivot = "palette_code")
+d <- ds %>% flatten_one(person_id = 908009, pivot = "palette_code")
+
+
+target_ids <- c(906466, 908009)
+ls_temp <- list()
+for(i in target_ids){
+  ls_temp[[as.character(i)]] <- ds %>% flatten_one(i, "palette_code")
+}
+dd <- ls_temp %>% dplyr::bind_rows()
+
 # ---- publish ---------------------------------------
 # This chunk will publish the summative report
 path_report_1 <- "./guided-exploration/lab2/lab2.Rmd"
