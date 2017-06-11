@@ -19,7 +19,8 @@ This course will focus on types and sources of administrative health data and on
 # Reports 
 - [Location Map](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/reports/location_map/location_map.html)
 - [Addictions-Sobering-4264](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/sandbox/addictions_sobering/addictions-4264-summative.html) cohort: summative analysis
-
+- [Full-3T-170662](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/sandbox/full_3t/full3t-170565-summative.html) the complete 3T cohort
+- [Mental Health Diagnosis (30565)](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/sandbox/mental_health/mh-30662-summative.html) cohort.  
 # Schedule
 ![image](https://cloud.githubusercontent.com/assets/2608073/26729360/6a4bf0ee-477b-11e7-8673-d5c9c5366623.png)
 

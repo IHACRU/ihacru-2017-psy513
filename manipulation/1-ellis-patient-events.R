@@ -32,7 +32,6 @@ path_save           <- "./data-unshared/derived/dto_patient_events_addictions_42
 # # Full 3T Cohort
 # path_input_events   <- "./data-public/raw/Patient_Events-170565_3T_Research_Full_2017-05-23.csv"
 # path_save           <- "./data-unshared/derived/dto_patient_events_full3t_170656"
-
 testit::assert("File does not exist", base::file.exists(path_input_events))
 
 # ---- utility-functions ----------------------------------------------------- 
