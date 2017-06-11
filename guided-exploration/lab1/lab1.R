@@ -36,6 +36,7 @@ source("./scripts/graphing/graph-presets.R") # font and color conventions
 # dto_location_map.rds is products of `./manipulation/0-ellis-location-map.R` 
 path_input_location_map   <- "./data-unshared/derived/dto_location_map.rds" 
 path_input_patient_events <-  "./data-unshared/derived/dto_patient_events_addictions_4264.rds" # research cohort
+path_save                 <-  "./data-unshared/derived/dto_addictions_4264" # research cohort
 # Make sure the files are located where they supposed to be, in `./data-unshared/` folder
 testit::assert("File does not exist", base::file.exists(path_input_location_map))
 testit::assert("File does not exist", base::file.exists(path_input_patient_events))
@@ -104,7 +105,7 @@ ds_patient_events <- readRDS(path_input_patient_events) # %>% as.data.frame()
 ds_location_map   <- readRDS(path_input_location_map)
 
 ds_patient_events  %>% glimpse(50)
-ds_location_map %>% glimpse(50)
+ds_location_map %>% glimpse(50) 
 
 # ---- tweak-data ------------------------------------------------------------
 # augment the event table with additional columns from location map
@@ -114,9 +115,9 @@ ds <- dplyr::left_join(
     dplyr::select_(.dots = components_location_map)
   ,by = c("location_map_id","palette_code","palette_colour_name") 
 ) %>%
-  dplyr::rename(
-    id = cohort_patient_id
-  ) %>% 
+  # dplyr::rename(
+  #   id = cohort_patient_id
+  # ) %>% 
   dplyr::mutate(
     
     location_class_description_display    = substr(location_class_description,1,42)
@@ -124,7 +125,7 @@ ds <- dplyr::left_join(
   )
 ds_location_map %>% glimpse()
 # from this point on, ds_location_map is needed only for selective reference
-ds %>% glimpse()
+ds %>% glimpse(70)
 # ds now contains full coordinates to events of the cohort down to unit level
 # ehr_address + location_classifiers + palette_colours
 
@@ -146,9 +147,12 @@ ds_location_map %>%
     options = list(
       pageLength = 10, 
       autoWidth  = TRUE
-      )
+    )
   )
 rm(ds_patient_events, ds_location_map)
+
+# ---- save-to-disk -------------------------------------------------------------
+saveRDS(ds, paste0(path_save,".rds"))
 
 # ---- utility-functions -------------------------------------------------------
 
@@ -355,7 +359,7 @@ colors_event_type <- c(
 )
 
 colors_provier_mix <- c(
-   "Nursing and allied health professional, physician oversight"  = "black"#
+  "Nursing and allied health professional, physician oversight"  = "black"#
   ,"Physician directed, nursing delivered"                        = "black"#
   ,"Nursing and allied health professional"                       = "black"#
   ,"Medical specialist with tech supports"                        = "black"#
@@ -371,7 +375,7 @@ colors_provier_mix <- c(
   ,"Pharmacist"                                                   = "black"#
   ,"Nursing managed with physician oversight"                     = "black"#
   ,"Physician"                                                    = "black"#          
-   
+  
 )
 
 ds %>% distinct(provider_mix)
@@ -687,7 +691,7 @@ ds_patient_profiles %>%
     person_id = 329656,
     color_by_ = "encounter_class",
     path_out_folder =  "./sandbox/cohort/graphs/"
-  
+    
   )
 
 
@@ -784,7 +788,7 @@ ds %>%
   geom_point(shape=124, size = 7)+
   # facet_grid(palette_colour_name~.)+
   theme_minimal() 
-  
+
 ds %>% distinct(palette_colour_name)
 
 t <- table(ds$encounter_type, ds$encounter_class); t[t==0]<-".";t
@@ -1096,4 +1100,3 @@ rmarkdown::render(
   # output_format = "pdf_document",
   clean=TRUE
 )
-
