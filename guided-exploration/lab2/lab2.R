@@ -46,7 +46,6 @@ ds <- readRDS(path_input)
 # ---- inspect-data -----------------------------------------------------------
 ds %>% dplyr::glimpse(70)
 # ---- tweak-data ------------------------------------------------------------
-
 ds %>% 
   dplyr::group_by(id) %>% 
   dplyr::mutate(
@@ -55,8 +54,13 @@ ds %>%
   dplyr::arrange(desc(n)) %>% 
   dplyr::select(id, n)
 
+# ---- utility-functions ------------------------------------------------------
 # flatten the timeline of one individual
-flatten_one <- function(df, person_id, pivot){
+flatten_one <- function(
+  df,          # data frame  
+  person_id,   # ids of person, whose timeline will be flattened
+  pivot        # the discrete variable used for flattening (e.g. palette_code)
+){
   # Temp values for testing and development
   # df        <- ds 
   # # person_id = 907750 #906466
@@ -67,9 +71,9 @@ flatten_one <- function(df, person_id, pivot){
   
   d1 <- df %>% 
     dplyr::filter(id == person_id) %>% 
-    dplyr::select(id,encounter_id,encounter_class, encounter_type, event_type,event_count, palette_code,
-                  # ,palette_colour_name_display
-                  duration_days) %>% 
+    # dplyr::select(id,encounter_id,encounter_class, encounter_type, event_type,event_count, palette_code,
+    #               # ,palette_colour_name_display
+    #               duration_days) %>% 
     dplyr::group_by_(.dots = c("id",pivot)) %>% 
     dplyr::summarize(
       n_encounters = length(unique(encounter_id)),
@@ -89,16 +93,86 @@ flatten_one <- function(df, person_id, pivot){
   return(d2)
 }
 # Usage:
-d <- ds %>% flatten_one(person_id = 906466, pivot = "palette_code")
-d <- ds %>% flatten_one(person_id = 908009, pivot = "palette_code")
+# d <- ds %>% flatten_one(person_id = 906466, pivot = "palette_code")
+# d <- ds %>% flatten_one(person_id = 908009, pivot = "palette_code")
 
-
-target_ids <- c(906466, 908009)
-ls_temp <- list()
-for(i in target_ids){
-  ls_temp[[as.character(i)]] <- ds %>% flatten_one(i, "palette_code")
+flatten_many <- function(
+  df, 
+  target_ids, 
+  attach_vars = c("gender","age_group")
+) {
+  # Values for testing and development
+  # df          <- ds
+  # target_ids  <- c(906466, 908009)
+  # attach_vars <- c("gender","age_group")
+  
+  d_patients <- df %>% 
+    dplyr::distinct_(.dots = c("id", attach_vars) )
+  d_categories <- df %>%
+    dplyr::distinct_(.dots = c("palette_code","palette_colour_name"))
+  # create a list object to capture a person in each element
+  ls_temp <- list()
+  for(i in target_ids){
+    ls_temp[[as.character(i)]] <- ds %>% flatten_one(i, "palette_code")
+  }
+  d_wide <- ls_temp %>% dplyr::bind_rows()
+  # head(dd)
+  static_variables <- c("id","metric")
+  dynamic_variables <-  setdiff(colnames(d_wide), c("id","metric"))
+  d_long <- d_wide %>% 
+    # tidyr::gather_()
+    tidyr::gather_("palette_code","value", dynamic_variables ) %>% 
+    dplyr::mutate(palette_code = as.integer(palette_code)) %>% 
+    dplyr::left_join(d_patients, by = "id") %>% 
+    dplyr::left_join(d_categories, by = "palette_code") %>% 
+    dplyr::select_(.dots = c(colnames(d_patients),"palette_code", "metric",  "value", "palette_colour_name")) %>% 
+    dplyr::arrange(id) %>% 
+    dplyr::mutate(
+      gender = factor(gender),
+      age_group = factor(age_group),
+      metric      = factor(metric),
+      palette_colour_name = factor(palette_colour_name)
+    )
+  return(d_long)
 }
-dd <- ls_temp %>% dplyr::bind_rows()
+# Usage:
+# select_ids <- sample(unique(ds$id), 10) 
+select_ids <- unique(ds$id) 
+d <- ds %>% flatten_many(select_ids)
+
+quick_save <- function(
+  g,            # ggplot object to be saved
+  name,         # name of the file to be saved   
+  width  = 1100, # width in pixels  
+  height = 800, # height in pixesl  
+  dpi    = 300  # resolution, dots per inch 
+){
+  ggplot2::ggsave(
+    filename= paste0(name,".png"), 
+    plot=g,
+    device = png,
+    path = "./guided-exploration/lab2/prints/",
+    width = width,
+    height = height,
+    # units = "cm",
+    dpi = dpi,
+    limitsize = FALSE
+  )
+}
+
+# ---- graphing-functions ----------------------------
+g1 <- d %>% 
+  dplyr::filter(metric == "encounters") %>% 
+  # ggplot(aes(x=palette_code, y = value)) + 
+  ggplot(aes(x=palette_colour_name, y = value)) + 
+  geom_bar(stat = "identity")+
+  coord_flip()+
+  theme_minimal() 
+
+g1 %>% quick_save("plot_1")
+
+
+
 
 # ---- publish ---------------------------------------
 # This chunk will publish the summative report

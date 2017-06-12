@@ -21,11 +21,11 @@ requireNamespace("DT", quietly=TRUE) # for dynamic tables
 # ---- declare-globals ---------------------------------------------------------
 # select the cohort, for which you wish to prepare the patient event table
 # # Fictional cohort used for testing and development of scripts
-# path_input_events   <- "./data-public/derived/dto_patient_events_addictions_4264_anon.csv"
-# path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
-# Addictions and Soberting 
-path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
+path_input_events   <- "./data-public/derived/dto_patient_events_addictions_4264_anon.csv"
 path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
+# Addictions and Soberting 
+# path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
+# path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
 # # Mental Health Diagnosis
 # path_input_events   <- "./data-unshared/raw/Patient_Events-30662_MH_Diagnosis_2017-05-23.csv"
 # path_save           <- "./data-unshared/derived/dto_patient_events_mh_30662"
@@ -59,8 +59,8 @@ ds_patient_events %>% dplyr::glimpse(50)
 ds_patient_events <- ds_patient_events %>% 
   dplyr::rename( # may need to rename a few variables to conform to convention
     id               = cohort_patient_id    # unique identifier for person in this cohort
-    ,encounter_id    = encounter_fact_key   # unique identifier for encounter
-    ,location_map_id = location_mapping_id  # unique identifier for program
+    # ,encounter_id    = encounter_fact_key   # unique identifier for encounter
+    # ,location_map_id = location_mapping_id  # unique identifier for program
   ) %>% 
   dplyr::select(
      id                       # unique person identifier
