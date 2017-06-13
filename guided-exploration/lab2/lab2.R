@@ -32,7 +32,8 @@ source("./manipulation/object-glossary.R")   # object definitions
 source("./scripts/common-functions.R")        # reporting functions and quick views
 source("./scripts/graphing/graph-presets.R") # font and color conventions
 # ---- declare-globals ---------------------------------------------------------
-path_input <- "./data-unshared/derived/dto_addictions_4264.rds"
+# path_input <- "./data-unshared/derived/dto_addictions_4264.rds"
+path_input <- "https://raw.githubusercontent.com/IHACRU/ihacru-2017-psy513/master/data-public/derived/dto_addictions_4264.csv"
 # define output format for the report
 options(
   knitr.table.format = "html"
@@ -42,7 +43,8 @@ options(
 # ---- utility-functions -------------------------------------------------------
 # functions local to this script go here. 
 # ---- load-data ---------------------------------------------------------------
-ds <- readRDS(path_input)
+# ds <- readRDS(path_input)
+ds <- readr::read_csv(path_input)
 # ---- inspect-data -----------------------------------------------------------
 ds %>% dplyr::glimpse(70)
 # ---- tweak-data ------------------------------------------------------------
@@ -93,8 +95,8 @@ flatten_one <- function(
   return(d2)
 }
 # Usage:
-# d <- ds %>% flatten_one(person_id = 906466, pivot = "palette_code")
-# d <- ds %>% flatten_one(person_id = 908009, pivot = "palette_code")
+# d <- ds %>% flatten_one(person_id = "102DBC2", pivot = "palette_code")
+# d <- ds %>% flatten_one(person_id = "DC2302", pivot = "palette_code")
 
 flatten_many <- function(
   df, 
@@ -103,13 +105,15 @@ flatten_many <- function(
 ) {
   # Values for testing and development
   # df          <- ds
-  # target_ids  <- c(906466, 908009)
+  # target_ids  <- c("102DBC2", "DC2302")
   # attach_vars <- c("gender","age_group")
   
   d_patients <- df %>% 
     dplyr::distinct_(.dots = c("id", attach_vars) )
   d_categories <- df %>%
-    dplyr::distinct_(.dots = c("palette_code","palette_colour_name"))
+    dplyr::distinct_(.dots = c("palette_code","palette_colour_name")) %>% 
+    dplyr::arrange(palette_code) %>% 
+    as.data.frame()
   # create a list object to capture a person in each element
   ls_temp <- list()
   for(i in target_ids){
@@ -117,7 +121,7 @@ flatten_many <- function(
   }
   d_wide <- ls_temp %>% dplyr::bind_rows()
   # head(dd)
-  static_variables <- c("id","metric")
+  static_variables  <- c("id","metric")
   dynamic_variables <-  setdiff(colnames(d_wide), c("id","metric"))
   d_long <- d_wide %>% 
     # tidyr::gather_()
@@ -128,9 +132,12 @@ flatten_many <- function(
     dplyr::select_(.dots = c(colnames(d_patients),"palette_code", "metric",  "value", "palette_colour_name")) %>% 
     dplyr::arrange(id) %>% 
     dplyr::mutate(
-      gender = factor(gender),
-      age_group = factor(age_group),
-      metric      = factor(metric),
+      gender              = factor(gender),
+      age_group           = factor(age_group),
+      metric              = factor(metric),
+      palette_code        = factor(palette_code, 
+                                   levels = d_categories[,"palette_code"], 
+                                   labels = d_categories[,"palette_colour_name"]),
       palette_colour_name = factor(palette_colour_name)
     )
   return(d_long)
@@ -171,6 +178,44 @@ g1 <- d %>%
 
 g1 %>% quick_save("plot_1")
 
+
+# ---- start-modeling --------------------------------
+dm <- d %>% 
+  dplyr::filter(metric == "encounters") %>% 
+  dplyr::mutate()
+
+m1 <- glm(formula = value ~ 1 + gender + age_group + palette_code, data = dm)
+library(broom)
+broom::glance(m1)
+t1 <-broom::tidy(m1)
+t1 <- t1 %>% 
+  dplyr::mutate(
+    term = sub("^palette_code", "", term)
+  )
+
+# remove leading zero
+numformat <- function(val) { sub("^(-?)0.", "\\1.", sprintf("%.2f", val)) }
+
+prettify_table <- function(x){
+  x <- t1
+  names(x) <- c("term","est","se","wald","pval")  
+  
+  x$sign <- ifelse(x$pval >.10, ">.10",
+                   ifelse(x$pval <= .10 & x$pval > .05, "<=.10",
+                          ifelse(x$pval <= .05 & x$pval > .01, "<=.05",
+                                 ifelse(x$pval <= .01 & x$pval > .001, "<=.01",
+                                        ifelse(x$pval <= .001, "<=.001", NA)))))
+  x <- x %>% 
+    dplyr::mutate( 
+      est_pretty = numformat(est),
+      se_pretty = numformat(se),
+      wald_pretty = numformat(wald),
+      pval_pretty = numformat(pval),
+      dense = sprintf("%6s(%4s),p=%3s, %5s",est_pretty, se_pretty, pval_pretty, sign)
+    ) %>% 
+    dplyr::select(term,dense )
+x
+}
 
 
 
