@@ -152,7 +152,8 @@ ds_location_map %>%
 rm(ds_patient_events, ds_location_map)
 
 # ---- save-to-disk -------------------------------------------------------------
-saveRDS(ds, paste0(path_save,".rds"))
+# saveRDS(ds, paste0(path_save,".rds"))
+readr::write_csv(ds, paste0(path_save,".csv"))
 
 # ---- utility-functions -------------------------------------------------------
 
