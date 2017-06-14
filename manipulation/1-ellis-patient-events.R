@@ -20,13 +20,13 @@ requireNamespace("DT", quietly=TRUE) # for dynamic tables
 
 # ---- declare-globals ---------------------------------------------------------
 # select the cohort, for which you wish to prepare the patient event table
-# Fictional cohort used for testing and development of scripts
-# path_input_events   <- "./data-public/derived/dto_patient_events_addictions_4264_anon.csv"
-# path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
-# # Addictions and Soberting 
+# # Fictional cohort used for testing and development of scripts
+path_input_events   <- "./data-public/derived/dto_patient_events_addictions_4264_anon.csv"
+path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
+# Addictions and Soberting 
 # path_input_events   <- "./data-unshared/raw/Patient_Events-4264_Addictions_Sobering_2017-05-12.csv"
 # path_save           <- "./data-unshared/derived/dto_patient_events_addictions_4264"
-# Mental Health Diagnosis
+# # Mental Health Diagnosis
 # path_input_events   <- "./data-unshared/raw/Patient_Events-30662_MH_Diagnosis_2017-05-23.csv"
 # path_save           <- "./data-unshared/derived/dto_patient_events_mh_30662"
 # # # Full 3T Cohort
@@ -35,7 +35,6 @@ requireNamespace("DT", quietly=TRUE) # for dynamic tables
 # Eating Disorder cohort
 path_input_events   <- "./data-unshared/raw/Patient_Events-342_Eating_Disorder_2017-06-13.csv"
 path_save           <- "./data-unshared/derived/dto_patient_events_eating_disorder_342"
-
 testit::assert("File does not exist", base::file.exists(path_input_events))
 
 # ---- utility-functions ----------------------------------------------------- 
@@ -59,10 +58,12 @@ ds_patient_events <- ds_patient_events %>%
   # apply function defined in `./manipulation/function-support.R`
   dplyr::mutate_all(dplyr::funs(replace_with_na) ) 
 # inspect the effect of the previous function
-ds_patient_events %>% dplyr::glimpse()
+ds_patient_events %>% dplyr::glimpse(50) 
 ds_patient_events <- ds_patient_events %>% 
   dplyr::rename( # may need to rename a few variables to conform to convention
-    id = cohort_patient_id    # id for person in this cohort study
+    id               = cohort_patient_id    # unique identifier for person in this cohort
+    # ,encounter_id    = encounter_fact_key   # unique identifier for encounter
+    # ,location_map_id = location_mapping_id  # unique identifier for program
   ) %>% 
   dplyr::select(
      id                       # unique person identifier
@@ -107,57 +108,3 @@ ds_patient_events <- ds_patient_events %>%
 # save the cleaned and formatted patient event table to be used in reports
 saveRDS(ds_patient_events, paste0(path_save,".rds"))
 # readr::write_csv(ds_location_map, paste0(path_save,".csv"))
-
-# ---- explore-data ----------------
-# PET - Patient Event Table
-ds %>% dplyr::glimpse()
-# How many patients are in this cohort?
-ds %>% distinct(id) %>% count() %>% neat()
-# What are basic demographics?
-ds %>% unique_sums(c("gender")) %>% arrange(desc(n_people)) %>% neat()
-ds %>% unique_sums(c("age_group"))  %>%  neat()
-ds %>% unique_sums(c("gender","age_group")) %>%  neat()
-
-# how may unique encounters are there in this set?
-ds %>% distinct(encounter_fact_key) %>% count() %>% neat()
-# tally engagement across encounter classes (as defined by data warehouse)
-ds %>% unique_sums("encounter_class")%>% arrange(desc(n_people)) %>% neat()
-ds %>% unique_sums("encounter_type") %>% arrange(desc(n_people)) %>% neat()
-ds %>% unique_sums(c("encounter_class","encounter_type"))%>% arrange(desc(encounter_class,n_people)) %>% neat()
-
-# how many event types  were there?
-ds %>% unique_sums("event_type") %>% arrange(desc(n_people)) %>% neat()
-# view event_title and event_details with a dynmaic table 
-ds %>% unique_sums(c("event_type","event_title","event_detail"))%>% arrange(desc(n_people)) %>% neat_DT()
-# what is the total number of events recorded for this cohort?
-ds %>% summarize(n_event = sum(event_count)) %>% neat()
-
-# what was the pattern of engagement over time?
-ds %>% unique_sums(c("event_year")) %>% neat()
-ds %>% unique_sums(c("event_month")) %>% neat()
-
-# durations of events vary, what is this distribution?
-d <- ds %>% unique_sums("duration_days")
-d %>% slice(1:6) %>% neat() # there are 318 possible values, the first 10 shown here
-d %>% tail(5) %>% neat() # the last value exposes a clear data error
-d <- d %>% 
-  filter(!duration_days==4910527) # remove the impossible value
-# durations of events vary, what is this distribution?
-d %>% 
-  ggplot( aes(x = duration_days, y = n_people) )+
-  geom_point()+
-  theme_minimal()
-# durations of events vary, what is this distribution?
-d %>% 
-  ggplot( aes(x = duration_days, y = n_encounters) )+
-  geom_point()+
-  theme_minimal()  
-# durations of events vary, what is this distribution?
-d %>% 
-  ggplot( aes(x = duration_days, y = n_events) )+
-  geom_point()+
-  theme_minimal()  
-
-
-
- 
