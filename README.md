@@ -16,6 +16,7 @@ This course will focus on types and sources of administrative health data and on
 - [Guided Explorations](guided-exploration/README.md)
 - [Research Review Template](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/research-reviews-working-template-v2.docx)
 - [Template for Research Protocol](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/protocol-template-v2.docx) to initiate a project with Island Health 
+- [Example of Research Protocol](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/protocol-template-example-polypharmacy.docx): Polypharmacy risk reduction. 
 
 # Reports 
 - [Location Map](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/reports/location_map/location_map.html)
