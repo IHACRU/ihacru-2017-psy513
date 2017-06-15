@@ -17,6 +17,7 @@ This course will focus on types and sources of administrative health data and on
 - [Research Review Template](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/research-reviews-working-template-v2.docx)
 - [Template for Research Protocol](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/protocol-template-v2.docx) to initiate a project with Island Health 
 - [Example of Research Protocol](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/protocol-template-example-polypharmacy.docx): Polypharmacy risk reduction. 
+- [Research Approval Process][research_approval]
 
 # Reports 
 - [Location Map][location_map]
@@ -27,12 +28,13 @@ This course will focus on types and sources of administrative health data and on
 - [Mental Health Diagnosis (30,565)][cohort_mental]
 - [Eating Disorder (342)][cohort_eat]
 
+[research_approval]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/research-approval-process.pdf
 [location_map]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/reports/location_map/location_map.html
-[cohort_addictions]:https://github.com/IHACRU/ihacru-2017-psy513-private/raw/master/sandbox/addictions_sobering/addictions-4264-summative.html
-[cohort_full3t]:https://github.com/IHACRU/ihacru-2017-psy513-private/raw/master/sandbox/full_3t/full3t-170565-summative.html
-[cohort_mental]:https://raw.githubusercontent.com/IHACRU/ihacru-2017-psy513-private/master/sandbox/mental_health/mh-30662-summative.html?token=ACfLye0dbPmm4prSYflTd9OJcUwLllTfks5ZS_LcwA%3D%3D
-[cohort_eat]: https://github.com/IHACRU/ihacru-2017-psy513-private/raw/master/sandbox/eating_disorder/eating-342-summative.html
- 
+[cohort_addictions]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/addictions_sobering/addictions-4264-summative.html
+[cohort_full3t]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/full_3t/full3t-170565-summative.html
+[cohort_mental]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/mental_health/mh-30662-summative.html
+[cohort_eat]: https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/eating_disorder/eating-342-summative.html
+
 # Schedule
 ![image](https://cloud.githubusercontent.com/assets/2608073/26729360/6a4bf0ee-477b-11e7-8673-d5c9c5366623.png)
 
