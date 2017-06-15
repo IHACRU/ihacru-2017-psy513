@@ -31,7 +31,7 @@ This course will focus on types and sources of administrative health data and on
 [research_approval]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/research-approval-process.pdf
 [location_map]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/reports/location_map/location_map.html
 [cohort_addictions]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/addictions_sobering/addictions-4264-summative.html
-[cohort_full3t]:https://github.com/IHACRU/ihacru-2017-psy513-private/raw/master/sandbox/full_3t/full3t-170565-summative.html
+[cohort_full3t]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/full_3t/full3t-170565-summative.html
 [cohort_mental]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/mental_health/mh-30662-summative.html
 [cohort_eat]: https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/eating_disorder/eating-342-summative.html
 
