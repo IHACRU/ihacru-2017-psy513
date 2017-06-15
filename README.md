@@ -18,6 +18,7 @@ This course will focus on types and sources of administrative health data and on
 - [Template for Research Protocol](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/protocol-template-v2.docx) to initiate a project with Island Health 
 - [Example of Research Protocol](https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/protocol-template-example-polypharmacy.docx): Polypharmacy risk reduction. 
 - [Research Approval Process][research_approval]
+- [DEPICTs][depicts] - data requirements and data management description
 
 # Reports 
 - [Location Map][location_map]
@@ -28,6 +29,7 @@ This course will focus on types and sources of administrative health data and on
 - [Mental Health Diagnosis (30,565)][cohort_mental]
 - [Eating Disorder (342)][cohort_eat]
 
+[depicts]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/DEPiCTS-data-requirements-short.docx
 [research_approval]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/research-approval-process.pdf
 [location_map]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/reports/location_map/location_map.html
 [cohort_addictions]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/addictions_sobering/addictions-4264-summative.html
