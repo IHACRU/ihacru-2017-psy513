@@ -89,6 +89,14 @@ Review some of the object definition to help you interpret the report.
 ```
 
 
+## Graphs
+```{r basic-graphs, echo=T, results='hide', message=FALSE, warning=F}
+```
+
+## Models
+```{r basic-models, echo=T, results='hide', message=FALSE, warning=F}
+```
+
 
 ```{r xxx, echo=T, results='show', message=FALSE}
 ```

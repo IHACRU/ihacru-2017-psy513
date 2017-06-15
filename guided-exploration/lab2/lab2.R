@@ -144,8 +144,8 @@ flatten_many <- function(
 }
 # Usage:
 # select_ids <- sample(unique(ds$id), 10) 
-select_ids <- unique(ds$id) 
-d <- ds %>% flatten_many(select_ids)
+# select_ids <- unique(ds$id) 
+# d <- ds %>% flatten_many(select_ids)
 
 quick_save <- function(
   g,            # ggplot object to be saved
@@ -167,37 +167,18 @@ quick_save <- function(
   )
 }
 
-# ---- graphing-functions ----------------------------
-g1 <- d %>% 
-  dplyr::filter(metric == "encounters") %>% 
-  # ggplot(aes(x=palette_code, y = value)) + 
-  ggplot(aes(x=palette_colour_name, y = value)) + 
-  geom_bar(stat = "identity")+
-  coord_flip()+
-  theme_minimal() 
-
-g1 %>% quick_save("plot_1")
-
-
-# ---- start-modeling --------------------------------
-dm <- d %>% 
-  dplyr::filter(metric == "encounters") %>% 
-  dplyr::mutate()
-
-m1 <- glm(formula = value ~ 1 + gender + age_group + palette_code, data = dm)
-library(broom)
-broom::glance(m1)
-t1 <-broom::tidy(m1)
-t1 <- t1 %>% 
-  dplyr::mutate(
-    term = sub("^palette_code", "", term)
-  )
 
 # remove leading zero
 numformat <- function(val) { sub("^(-?)0.", "\\1.", sprintf("%.2f", val)) }
 
-prettify_table <- function(x){
-  x <- t1
+prettify_table <- function(
+  x, 
+  pattern_to_replace=""
+){
+  # Use these values for testing and de  velopment
+  # x <- t1
+  # pattern_to_replace = "^palette_code"
+  
   names(x) <- c("term","est","se","wald","pval")  
   
   x$sign <- ifelse(x$pval >.10, ">.10",
@@ -214,10 +195,50 @@ prettify_table <- function(x){
       dense = sprintf("%6s(%4s),p=%3s, %5s",est_pretty, se_pretty, pval_pretty, sign)
     ) %>% 
     dplyr::select(term,dense )
-x
+  
+  x <- x %>% 
+    dplyr::mutate(
+      term = sub(pattern_to_replace, "", term)
+    )
+  
+  return(x)
 }
+# Usage:
+# m1 %>%  broom::tidy() %>% prettify_table()
 
 
+# ---- basic-graphs ----------------------------
+
+select_ids <- unique(ds$id)
+d <- ds %>% flatten_many(select_ids)
+
+g1 <- d %>% 
+  dplyr::filter(metric == "encounters") %>% 
+  # ggplot(aes(x=palette_code, y = value)) + 
+  ggplot(aes(x=palette_colour_name, y = value)) + 
+  geom_bar(stat = "identity")+
+  coord_flip()+
+  theme_minimal() 
+g1
+# g1 %>% quick_save("plot_1")
+
+
+# ---- basic-models --------------------------------
+dm <- d %>% 
+  dplyr::filter(metric == "encounters") %>% 
+  dplyr::mutate()
+
+dm %>% glimpse(50)
+
+m1 <- glm(formula = value ~ 1 + gender + age_group + palette_code, data = dm)
+library(broom)
+broom::glance(m1)
+t1 <-broom::tidy(m1)
+t1 <- t1 %>% 
+  dplyr::mutate(
+    term = sub("^palette_code", "", term)
+  )
+m1 %>% broom::tidy() %>% prettify_table() %>% print()
 
 # ---- publish ---------------------------------------
 # This chunk will publish the summative report
