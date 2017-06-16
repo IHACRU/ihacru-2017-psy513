@@ -600,7 +600,7 @@ for(i in unique(ds_jpegs$person) ){
 # }
 
 # ---- publish ---------------------------------------
-path_report_1 <- "./sandbox/mhsu-74/mhsu74-demonstration.Rmd"
+path_report_1 <- "./sandbox/eating_disorder/eating-342-summative.Rmd"
 # path_report_1 <- "./reports/encounter-timelines-v1/encounter-timelines-v1.Rmd"
 # path_report_2 <- "./reports/*/report_2.Rmd"
 allReports <- c(path_report_1)
