@@ -35,7 +35,7 @@ source("./scripts/graphing/graph-presets.R") # font and color conventions
 # ---- declare-globals ---------------------------------------------------------
 # dto_location_map.rds is products of `./manipulation/0-ellis-location-map.R` 
 path_input_location_map   <- "./data-unshared/derived/dto_location_map.rds" 
-path_input_patient_events <-  "./data-unshared/derived/dto_patient_events_eating_disorder_342.rds" # research cohort
+path_input_patient_events <-  "./data-unshared/derived/dto_patient_events_fas_diagnosis_267.rds" # research cohort
 # Make sure the files are located where they supposed to be, in `./data-unshared/` folder
 testit::assert("File does not exist", base::file.exists(path_input_location_map))
 testit::assert("File does not exist", base::file.exists(path_input_patient_events))

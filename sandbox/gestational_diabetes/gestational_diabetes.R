@@ -35,7 +35,7 @@ source("./scripts/graphing/graph-presets.R") # font and color conventions
 # ---- declare-globals ---------------------------------------------------------
 # dto_location_map.rds is products of `./manipulation/0-ellis-location-map.R` 
 path_input_location_map   <- "./data-unshared/derived/dto_location_map.rds" 
-path_input_patient_events <-  "./data-unshared/derived/dto_patient_events_eating_disorder_342.rds" # research cohort
+path_input_patient_events <-  "./data-unshared/derived/dto_patient_events_gestational_diabetes_842.rds" # research cohort
 # Make sure the files are located where they supposed to be, in `./data-unshared/` folder
 testit::assert("File does not exist", base::file.exists(path_input_location_map))
 testit::assert("File does not exist", base::file.exists(path_input_patient_events))
@@ -269,7 +269,7 @@ ds %>% unique_sums("unit_key") %>% arrange(desc(n_people)) %>% dt("none")
 # ---- publish ---------------------------------------
 # This chunk will publish the summative report
 # path_report_1 <- "./sandbox/addictions_sobering/addictions-4067-summative.Rmd"
-path_report_1 <- "./sandbox/gestestional_diabetes/gest_diab-842-summative.Rmd"
+path_report_1 <- "./sandbox/gestational_diabetes/gest_diab-842-summative.Rmd"
 # path_report_1 <- "./reports/encounter-timelines-v1/encounter-timelines-v1.Rmd"
 # path_report_2 <- "./reports/*/report_2.Rmd"
 allReports <- c(path_report_1)

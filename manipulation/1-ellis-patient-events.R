@@ -36,16 +36,16 @@ path_save           <- "./data-unshared/derived/dto_patient_events_addictions_42
 # path_input_events   <- "./data-unshared/raw/Patient_Events-342_Eating_Disorder_2017-06-13.csv"
 # path_save           <- "./data-unshared/derived/dto_patient_events_eating_disorder_342"
 # MHSU Counsel cohort
-# path_input_events   <- "./data-unshared/raw/Patient_Events-22634_MHSU_Counsel_2017-06-14"
+# path_input_events   <- "./data-unshared/raw/Patient_Events-22634_MHSU_Counsel_2017-06-14.csv"
 # path_save           <- "./data-unshared/derived/dto_patient_events_mhsu_counsel_22634"
 # Dementia Diagnosis cohort
-# path_input_events   <- "./data-unshared/raw/Patient_Events-15730_Dementia_Diagnosis_2017-06-14"
+# path_input_events   <- "./data-unshared/raw/Patient_Events-15730_Dementia_Diagnosis_2017-06-14.csv"
 # path_save           <- "./data-unshared/derived/dto_patient_events_dementia_diagnosis_15730"
 # Gestational Diabetes cohort
-# path_input_events   <- "./data-unshared/raw/Patient_Events-842_Gestational_Diabetes_2017-06-14"
+# path_input_events   <- "./data-unshared/raw/Patient_Events-842_Gestational_Diabetes_2017-06-14.csv"
 # path_save           <- "./data-unshared/derived/dto_patient_events_gestational_diabetes_842"
 # FAS Diagnosis cohort
-path_input_events   <- "./data-unshared/raw/Patient_Events-267_FAS_Diagnosis_2017-06-14"
+path_input_events   <- "./data-unshared/raw/Patient_Events-267_FAS_Diagnosis_2017-06-14.csv"
 path_save           <- "./data-unshared/derived/dto_patient_events_fas_diagnosis_267"
 testit::assert("File does not exist", base::file.exists(path_input_events))
 
