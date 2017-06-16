@@ -269,7 +269,7 @@ ds %>% unique_sums("unit_key") %>% arrange(desc(n_people)) %>% dt("none")
 # ---- publish ---------------------------------------
 # This chunk will publish the summative report
 # path_report_1 <- "./sandbox/addictions_sobering/addictions-4067-summative.Rmd"
-path_report_1 <- "./sandbox/eating_disorder/eating-342-summative.Rmd"
+path_report_1 <- "./sandbox/dementia_diagnosis/dementia-15730-summative.Rmd"
 # path_report_1 <- "./reports/encounter-timelines-v1/encounter-timelines-v1.Rmd"
 # path_report_2 <- "./reports/*/report_2.Rmd"
 allReports <- c(path_report_1)
