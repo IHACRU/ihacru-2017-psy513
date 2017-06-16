@@ -31,8 +31,9 @@ source("./manipulation/object-glossary.R")   # object definitions
 source("./scripts/common-functions.R")        # reporting functions and quick views
 source("./scripts/graphing/graph-presets.R") # font and color conventions
 
-# ---- inspect-data -------------------------------------------------------------
+# ---- load-data -------------------------------------------------------------
 
+# ---- inspect-data -------------------------------------------------------------
 
 # ---- tweak-data --------------------------------------------------------------
 

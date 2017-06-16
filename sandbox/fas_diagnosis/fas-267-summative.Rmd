@@ -1,5 +1,5 @@
 ---
-title: "Eating Disorders Cohort: Summative analysis"
+title: "FAS Diagnosis Cohort: Summative analysis"
 author: "A.Koval, K.Moselle, S.Robertson"
 date: "`r Sys.Date()`"
 output: 
@@ -44,7 +44,7 @@ opts_chunk$set(
 echoChunks <- FALSE
 options(width=120) #So the output is 50% wider than the default.
 # connect to the file with the underlying R script  
-read_chunk("./sandbox/eating_disorder/eating_disorder.R") 
+read_chunk("./sandbox/fas_diagnosis/fas_diagnosis.R") 
 ```
 
 
