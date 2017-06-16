@@ -21,21 +21,7 @@ This course will focus on types and sources of administrative health data and on
 - [DEPICTs][depicts] - data requirements and data management description
 
 # Reports 
-- [Location Map][location_map]
-
-#### Cohort Summative Reports
-- [Addictions and Sobering (4,264)][cohort_addictions]
-- [Full-3T (170,662)][cohort_full3t]
-- [Mental Health Diagnosis (30,565)][cohort_mental]
-- [Eating Disorder (342)][cohort_eat]
-
-[depicts]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/DEPiCTS-data-requirements-short.docx
-[research_approval]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/research-approval-process.pdf
-[location_map]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/reports/location_map/location_map.html
-[cohort_addictions]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/addictions_sobering/addictions-4264-summative.html
-[cohort_full3t]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/full_3t/full3t-170565-summative.html
-[cohort_mental]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/mental_health/mh-30662-summative.html
-[cohort_eat]: https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/sandbox/eating_disorder/eating-342-summative.html
+Reports are available from the [private repository][private_repo]. (Must be logged in with github account)
 
 # Schedule
 ![image](https://cloud.githubusercontent.com/assets/2608073/26729360/6a4bf0ee-477b-11e7-8673-d5c9c5366623.png)
@@ -58,5 +44,9 @@ Students are encouraged to take an active part in the direction and content of t
 - 2. Research Proposal (30%): A proposal (7-10 pages) will be developed that will be sufficient for a data request and ethics application. Details will be given in class. 
 - 3. A 10 minute presentation (20%): Students are asked to present their research proposal to the class at the end of the term. 
 
+
+[depicts]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/DEPiCTS-data-requirements-short.docx
+[research_approval]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/research-approval-process.pdf
+[private_repo]:https://github.com/IHACRU/ihacru-2017-psy513-private/edit/master/README.md
 
 
