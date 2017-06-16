@@ -45,9 +45,15 @@ path_save           <- "./data-unshared/derived/dto_patient_events_addictions_42
 # path_input_events   <- "./data-unshared/raw/Patient_Events-842_Gestational_Diabetes_2017-06-14.csv"
 # path_save           <- "./data-unshared/derived/dto_patient_events_gestational_diabetes_842"
 # FAS Diagnosis cohort
-path_input_events   <- "./data-unshared/raw/Patient_Events-267_FAS_Diagnosis_2017-06-14.csv"
-path_save           <- "./data-unshared/derived/dto_patient_events_fas_diagnosis_267"
+# path_input_events   <- "./data-unshared/raw/Patient_Events-267_FAS_Diagnosis_2017-06-14.csv"
+# path_save           <- "./data-unshared/derived/dto_patient_events_fas_diagnosis_267"
+# Respiratory Infections cohort
+path_input_events   <- "./data-unshared/raw/Patient_Events-1537_Respiratory_Infections_2017-06-16.csv"
+path_save           <- "./data-unshared/derived/dto_patient_events_respiratory_1537"
+
 testit::assert("File does not exist", base::file.exists(path_input_events))
+
+
 
 # ---- utility-functions ----------------------------------------------------- 
 # place for functions local to this script
