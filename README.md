@@ -47,6 +47,6 @@ Students are encouraged to take an active part in the direction and content of t
 
 [depicts]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/DEPiCTS-data-requirements-short.docx
 [research_approval]:https://rawgit.com/IHACRU/ihacru-2017-psy513/master/libs/materials/research-approval-process.pdf
-[private_repo]:https://github.com/IHACRU/ihacru-2017-psy513-private/edit/master/README.md
+[private_repo]:https://github.com/IHACRU/ihacru-2017-psy513-private/blob/master/README.md
 
 
