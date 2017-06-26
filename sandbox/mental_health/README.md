@@ -1,1 +1,0 @@
-Summative report for the Mental Health Diagnosis cohort
