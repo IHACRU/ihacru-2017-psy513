@@ -1,5 +1,5 @@
 # Statistical Analysis of Administrative Health and Linked Longitudinal Encounter Data.
-A graduate course (**PSYC 513 - Statistical Methods**) taught at the University of Victoria in summer 2017.
+A graduate course (**PSYC 513 - Statistical Methods**) taught at the University of Victoria in the summer of 2017.
 
 # Course description
 
